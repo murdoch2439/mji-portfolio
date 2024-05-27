@@ -1,5 +1,4 @@
 import React, {FunctionComponent} from "react"
-import TagItem from "../tags/TagItem";
 import TagList from "../tags/TagList";
 
 
@@ -15,7 +14,7 @@ type props={
 
 
 const PortfolioItem : FunctionComponent<props> =({item})=>{
-    const {cover, title, github, demo, work} = item
+    const {cover, demo, work} = item
     return(
         <article className={"portfolio__item"}>
             <div className={"portfolio__item-image"}>
@@ -24,7 +23,7 @@ const PortfolioItem : FunctionComponent<props> =({item})=>{
             {/*<h3>{title}</h3>*/}
             <TagList  items={work}/>
             <div className={"portfolio__item-cta"}>
-                <a href={demo} className={"btn"} target={"_blank"}>See project</a>
+                <a href={demo} className={"btn"} target={"__blank"}>See project</a>
                 {/*<a href={demo} className={"btn btn-primary"} target={"_blank"}>Visit the website</a>*/}
             </div>
         </article>
