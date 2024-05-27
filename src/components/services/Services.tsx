@@ -21,7 +21,7 @@ const WEB_DEVELOPMENT=[
     "Web development",
     "Mobile development",
     "E-commerce development",
-    "Deployment",
+    "Dev Ops",
     "Maintenance"
 ]
 
