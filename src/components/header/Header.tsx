@@ -44,15 +44,15 @@ const Header : FunctionComponent =()=>{
                {/*    <Switch rounded={true} isToggled={isToggled} onToggle={()=>setIsToggled(!isToggled)} />*/}
                {/*</div>*/}
                <h2>Welcome onboard</h2>
-               <h1>Personal Portfolio</h1>
-               <div style={{display:"flex", alignItems:'center', justifyContent:"center", gap:"0.8rem"}}>
+               <h1 className={"header_title_one"}>Personal Portfolio</h1>
+               <div className={"services_tag"} >
                    <h5 className={"text-light"}>Fullstack Development</h5>
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>UI/UX Design</h5>
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>Copy writing</h5>
                </div>
-               <h4 style={{fontWeight:300}}>Build a product, feature or website to boost and grow your business'  visibility and sales.</h4>
+               <h4 className={"intro"} >Build a product, automate your business process, add a feature or create a website to boost and grow your business'  visibility and sales.</h4>
 
                <CTA />
 
