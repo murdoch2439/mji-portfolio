@@ -1,8 +1,6 @@
 import React, {FunctionComponent,} from "react"
 import {useGlobalStore} from "../../store/Context";
 
-
-
 const CTA :FunctionComponent =()=>{
     const {setActiveSection}= useGlobalStore()
     return(
@@ -15,25 +13,6 @@ const CTA :FunctionComponent =()=>{
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default CTA
