@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from "react"
 // import {BiCheck} from "react-icons/bi";
-import {BsCheck2Circle} from "react-icons/bs";
+// import {BsCheck2Circle} from "react-icons/bs";
 import TagItem from "./TagItem";
 import "./taglist.css"
 
