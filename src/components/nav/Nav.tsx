@@ -4,8 +4,8 @@ import {AiOutlineHome, AiOutlineUser} from "react-icons/ai"
 import {BiBook, BiMessageSquareDetail} from "react-icons/bi"
 import {RiServiceLine} from "react-icons/ri"
 import {useGlobalStore} from "../../store/Context";
-import { MdWorkOutline } from "react-icons/md";
-import { FaRegNoteSticky } from "react-icons/fa6";
+// import { MdWorkOutline } from "react-icons/md";
+// import { FaRegNoteSticky } from "react-icons/fa6";
 
 
 
