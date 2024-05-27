@@ -17,26 +17,12 @@ const Header : FunctionComponent =()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
        <header>
            <div className={"container header__container"}>
                {/*<div className={"switch"}>*/}
                {/*    <Switch rounded={true} isToggled={isToggled} onToggle={()=>setIsToggled(!isToggled)} />*/}
                {/*</div>*/}
-               <h2>Welcome onboard</h2>
+               <h2>Welcome on Mji Website</h2>
                <h1 className={"header_title_one"}>Personal Portfolio</h1>
                <div className={"services_tag"} >
                    <h5 className={"text-light"}>Fullstack Development</h5>
@@ -45,7 +31,7 @@ const Header : FunctionComponent =()=>{
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>Content writing</h5>
                </div>
-               <h4 className={"intro"} >Build a product, automate your business process, add a feature or create a website to boost and grow your business'  visibility and sales.</h4>
+               <h4 className={"intro"} >I can help you build a digital product, automate your business process, create your website or add a new feature to boost and growth and online visibility. But first...</h4>
 
                <CTA />
 
