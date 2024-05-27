@@ -1,0 +1,168 @@
+footer{
+    background:var(--color-primary);
+    padding:0.86rem 0;
+    text-align: center;
+    font-size:0.9rem;
+    margin-top:3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer a{
+    color:var(--color-bg);
+}
+
+.footer__logo{
+   font-size:2rem;
+    font-weight:500;
+    margin-bottom:0.5rem;
+    display:inline-block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.permalinks{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:2rem;
+    margin:0 auto 1rem;
+
+
+}
+
+
+
+
+
+
+
+.footer__socials{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom:2rem;
+}
+
+.footer__socials a{
+    background:var(--color-bg);
+    color:var(--color-white);
+    padding:0.8rem;
+    border-radius:0.7rem;
+    display:flex;
+    border:1px solid transparent;
+    transition: var(--transition)
+}
+
+
+
+
+
+
+
+
+
+
+.footer__socials a::before{
+    content: "";
+   background:transparent;
+    color:var(--color-bg);
+    border-color:var(--color-bg);
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.footer__socials a:hover::before {
+    transform: scale(1);
+}
+
+
+
+.footer__socials a:hover {
+    background:var(--color-primary);
+    filter:  saturate(10%) invert(30%) sepia(30%) saturate(98%) hue-rotate(346deg) brightness(85%) contrast(86%);
+    /*color:red;*/
+}
+
+.footer__copyright{
+    margin-bottom:2rem;
+    color:var(--color-bg)
+}
+
+
+
+
+
+
+
+/*============== Media QUERIES (MEDIUM DEVices) ==================*/
+/*@media screen and (max-width:1024px){*/
+
+/*}*/
+/*============== Media QUERIES (small DEVices) ==================*/
+@media screen and (max-width:600px){
+     footer{
+         display:none
+     }
+
+
+
+
+
+
+    .permalinks{
+       flex-direction: column;
+        gap:1.5rem
+    }
+    .footer__socials{
+        margin-bottom:2.6rem
+    }
+}

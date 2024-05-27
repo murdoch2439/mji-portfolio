@@ -1,0 +1,23 @@
+.navbarrr{
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  var(--transition);
+
+
+
+
+
+
+
+
+}
+
+
+ .scrolled{
+    padding:0 0;
+    /*background-color:red;*/
+
+}

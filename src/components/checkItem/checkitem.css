@@ -1,0 +1,72 @@
+.container__check{
+    display:flex;
+    /*background-color: red;*/
+    /*justify-content: center;*/
+    align-items: center;
+    gap:1rem;
+    height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container__icon{
+    /*background-color: green;*/
+}
+
+
+.container__p{
+    /*background-color: #61dafb;*/
+}
