@@ -65,6 +65,12 @@
     border-color: var(--color-primary)
 }
 
+.myTextarea:hover{
+    border-color:var(--color-primary);
+}
+.myTextarea:focus{
+    border-color:var(--color-primary);
+}
 
 .form__label{
    position:absolute;
