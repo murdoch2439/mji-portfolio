@@ -1,0 +1,5 @@
+.tag__list{
+    display: flex;
+    gap: 0.6rem;
+    margin:1rem 0;
+}
