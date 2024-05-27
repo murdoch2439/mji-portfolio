@@ -81,6 +81,29 @@ const Experience : FunctionComponent =()=>{
                         <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React Native"} experienceLevel={"Experienced"} />
                     </div>
                 </div>
+
+                {/*END OF FRONTEND*/}
+                <div className={"experience__backend"}>
+                    <h3>SoftSkills</h3>
+                    <div className={"experience__content"}>
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Communication"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Empathy"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Management"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Negotiation"} experienceLevel={""} />
+                        {/*<ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React Native"} experienceLevel={""} />*/}
+                    </div>
+                </div>
+                {/*END OF FRONTEND*/}
+                <div className={"experience__backend"}>
+                    <h3>Interests</h3>
+                    <div className={"experience__content"}>
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Reading"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Business Growth"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Aviation"} experienceLevel={""} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Photography"} experienceLevel={""} />
+                        {/*<ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React Native"} experienceLevel={""} />*/}
+                    </div>
+                </div>
             </div>
         </section>
     )
