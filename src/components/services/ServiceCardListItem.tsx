@@ -8,25 +8,6 @@ type props={
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const ServiceCardListItem : FunctionComponent<props> =({items, onClick})=>{
     return(
         <ul className={"service__list"}>
