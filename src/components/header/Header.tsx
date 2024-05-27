@@ -25,9 +25,9 @@ const Header : FunctionComponent =()=>{
                <h2>Welcome on Mji Website</h2>
                <h1 className={"header_title_one"}>Personal Portfolio</h1>
                <div className={"services_tag"} >
-                   <h5 className={"text-light"}>Fullstack Development</h5>
-                   <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>UI/UX Design</h5>
+                   <h5 className={"text-light separator"}> | </h5>
+                   <h5 className={"text-light"}>Fullstack Development</h5>
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>Content writing</h5>
                </div>
