@@ -4,7 +4,7 @@ import {MdOutlineMail} from "react-icons/md"
 import {RiMessengerLine} from "react-icons/ri"
 import {BsWhatsapp} from "react-icons/bs"
 import ContactOption from "./ContactOption";
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import TextInput from "../textInput/TextInput";
 
 const options=[
