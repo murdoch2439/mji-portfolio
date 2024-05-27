@@ -36,7 +36,7 @@ const About: FunctionComponent = () => {
                 <div className={"about__content"}>
                     <div className={"about__cards"}>
                         <AboutCard icon={<FaAward className={"about__icon"}/>} title={"Experience"}
-                                   subtitle={"2+ Years Working"}/>
+                                   subtitle={"4+ Years Working"}/>
                         <AboutCard icon={<FiUsers className={"about__icon"}/>} title={"Clients"}
                                    subtitle={"10+ Worldwide"}/>
                         <AboutCard icon={<VscFolderLibrary className={"about__icon"}/>} title={"Projects"}
@@ -44,13 +44,17 @@ const About: FunctionComponent = () => {
                     </div>
                     <div>
                         <p className={"about__p"}>
-                            I offer design, development and consulting
-                            services to small businesses just like yours.
-                            Working for more than 2 years with startups, I have learned about processes and how to put together efficient information system in order to boost your business's visibility online.
+                            Whether you are looking for a website, web app or mobile app, you landed at the right place to get your problem solved and get result.
+                            From design to technical implementation, I'm able to deliver any project with a well structured work process.
+                        </p>
+                        <p className={"about__p"}>
+                            My years of experience and works qualify me to help you transform your idea into a finished product.
+                             I've been offering consulting services to small businesses and startups helping them build a strong online brand or achieving their business goals using information technologies <br />
+
                         </p>
                     </div>
                     <a href={"#contact"} onClick={() => setActiveSection("#contact")} className={"btn btn-primary"}>
-                        Get a Quote
+                        Let's talk
                     </a>
                 </div>
             </div>
