@@ -15,23 +15,6 @@ const UI_UXDESIGN=[
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const WEB_DEVELOPMENT=[
     "Research & analysis",
     "Features definition",
@@ -44,10 +27,10 @@ const WEB_DEVELOPMENT=[
 
 
 const CONTENT_CREATION=[
-    "Portfolio",
+    "Website",
     "Social media marketing",
-    "Blog content",
-
+    "Blog articles",
+    "Newsletter"
 ]
 
 const Services : FunctionComponent =()=>{
@@ -92,7 +75,7 @@ const Services : FunctionComponent =()=>{
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                 </ServiceCard>
 
-                <ServiceCard title={"Copywritting"} >
+                <ServiceCard title={"Content writing"} >
                     <ServiceCardListItem items={CONTENT_CREATION} />
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
@@ -100,8 +83,6 @@ const Services : FunctionComponent =()=>{
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                 </ServiceCard>
-
-
             </div>
         </section>
     )
