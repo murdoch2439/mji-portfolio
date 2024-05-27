@@ -4,7 +4,7 @@ import CTA from "./CTA";
 import Profile from "../../assets/profile.png"
 import HeaderSocial from "./HeaderSocial";
 import {useGlobalStore} from "../../store/Context";
-import Switch from "../Switch/Switch";
+// import Switch from "../Switch/Switch";
 // import {BsLinkedin} from  "react-icons/bs"
 // import {FaGithub} from "react-icons/fa"
 // import {FiDribbble} from "react-icons/fi"
@@ -12,15 +12,8 @@ import Switch from "../Switch/Switch";
 
 const Header : FunctionComponent =()=>{
     const { setActiveSection }= useGlobalStore()
-    const [isToggled, setIsToggled]= useState(true)
+    // const [isToggled, setIsToggled]= useState(true)
     return(
-
-
-
-
-
-
-
 
 
 
@@ -50,7 +43,7 @@ const Header : FunctionComponent =()=>{
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>UI/UX Design</h5>
                    <h5 className={"text-light separator"}> | </h5>
-                   <h5 className={"text-light"}>Copy writing</h5>
+                   <h5 className={"text-light"}>Content writing</h5>
                </div>
                <h4 className={"intro"} >Build a product, automate your business process, add a feature or create a website to boost and grow your business'  visibility and sales.</h4>
 
@@ -70,7 +63,7 @@ const Header : FunctionComponent =()=>{
                    {/*    <FaGithub />*/}
                    {/*    <FiDribbble />*/}
                    {/*</div>*/}
-                   <img src={Profile} alt={""} />
+                   <img src={Profile} alt={"a profile of murdoch"} />
                </div>
                <a href={"#contact"} onClick={()=>setActiveSection("#contact")} className={"scroll__down"}>Scroll Down</a>
            </div>
