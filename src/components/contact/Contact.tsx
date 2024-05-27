@@ -27,7 +27,7 @@ const options=[
     {
         id:'3',
         title:"WhatsApp",
-        subTitle:"+243818081758",
+        subTitle:"+243 818 081 758",
         action:"https://api.whatsapp.com/send?phone=+243818081758",
         icon:<BsWhatsapp className={"contact__option-icon"} />,
         actionTitle:"Send a message"
@@ -90,11 +90,11 @@ const Contact : FunctionComponent =()=>{
     const form:any = useRef();
     const sendEmail = async(e:any) => {
         e.preventDefault();
-        const formInputs ={name:form.current[0].value, email:form.current[1].value, message:form.current[2].value}
-        console.log("E target ===>",formInputs)
+        const formInputs ={name:form.current[0].value, email:form.current[1].value, object:form.current[2].value, message:form.current[3].value}
+        // console.log("E target ===>",formInputs)
         // console.log("E target ===>",form.current[1].value)
 
-        // // e.preventDefault();
+        // // // e.preventDefault();
         // try{
         //     const response = await emailjs.sendForm('service_qf275h2', 'template_bhnqhc1', form.current, 'osiNwt610-fXn1yTV')
         //     e.target.reset()
@@ -136,13 +136,13 @@ const Contact : FunctionComponent =()=>{
 
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
-                    <TextInput label={"Full Name"} maxLength={20} />
+                    <TextInput label={"Full Name"} maxLength={30} />
                     <TextInput label={"Your Email"} type={"email"} maxLength={20} />
                     <TextInput label={"What you write for"}  maxLength={100}/>
                     {/*<TextInput label={"Your Email"} type={"email"} isTextArea={true} />*/}
                     {/*<input type={"text"} name={"name"} placeholder={"Your Full Name"} required/>*/}
                     {/*<input type={"email"} name={"email"} placeholder={"Your Email"} required/>*/}
-                    <textarea  name={"message"} rows={14} placeholder={"Your Message"} required />
+                    <textarea className={"myTextarea"}  name={"message"} rows={14} placeholder={"Your Message"} required />
                     <button type={"submit"} className={"btn btn-primary"}>Send Message</button>
                 </form>
 
