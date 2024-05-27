@@ -23,12 +23,12 @@ const Footer : FunctionComponent =()=>{
                 <li><a href={"#contact"} onClick={()=>setActiveSection("#contact")} className={activeSection === "#contact" ? "active":""}>Contact</a></li>
             </ul>
             <div className={"footer__socials"}>
-                <a href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
-                <a href={"https://instagram.com"}><FiInstagram /></a>
-                <a href={"https://x.com/journey2yrself"}><IoLogoTwitter /></a>
+                <a target={"_blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
+                <a target={"_blank"} href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram /></a>
+                <a target={"_blank"} href={"https://x.com/journey2yrself"}><IoLogoTwitter /></a>
             </div>
             <div className={"footer__copyright"}>
-                <small>&copy; {currentYear} <a href={"#"}>Murkorporate</a> &nbsp;| All rights reserved.</small>
+                <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>
             </div>
         </footer>
     )
