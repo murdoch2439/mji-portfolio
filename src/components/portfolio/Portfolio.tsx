@@ -1,9 +1,7 @@
 import React, {FunctionComponent} from "react"
 import './portfolio.css'
 import PortfolioItem from "./PortfolioItem";
-import image from "../../assets/work1.jpg"
 import noda from "../../assets/noda1.png"
-import stopchantage from "../../assets/stopchantage.png"
 import trav from "../../assets/trav.png"
 import taxi from "../../assets/tax.png"
 import grocery from "../../assets/gro.png"
