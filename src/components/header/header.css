@@ -9,52 +9,6 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .separator{
     color:var(--color-primary)
 }
@@ -142,6 +96,19 @@ header{
     font-size:0.9rem;
 }
 
+
+.intro{
+    font-weight:300;
+    padding:0 11rem;
+}
+
+.services_tag{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.8rem;
+}
+
 /*============== Media QUERIES (MEDIUM DEVices) ==================*/
 @media screen and (max-width:1024px){
     header{
@@ -161,6 +128,10 @@ header{
     .header__socials, .scroll__down{
          display:none
     }
+
+    .me{
+        display:none;
+    }
     .switch{
         position:absolute;
         right: 0;
@@ -168,6 +139,25 @@ header{
 
         font-weight: 300;
         font-size:0.9rem;
+    }
+
+    .header_title_one{
+        font-size:large;
+    }
+
+    .services_tag{
+        /*display:flex;*/
+        /*align-items:center;*/
+        /*justify-content:center;*/
+        gap:0.3rem;
+        /*background-color: var(--color-primary);*/
+        border-radius: 2rem;
+        /*color:var(--color-white)*/
+    }
+
+    .intro{
+        /*font-weight:300;*/
+        padding:0 ;
     }
 }
 
