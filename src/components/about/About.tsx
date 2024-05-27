@@ -6,8 +6,8 @@ import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
 import AboutCard from "./AboutCard";
 import {useGlobalStore} from "../../store/Context";
-import {AiOutlineCheck} from "react-icons/ai"
-import CheckItem from "../checkItem/CheckItem";
+// import {AiOutlineCheck} from "react-icons/ai"
+// import CheckItem from "../checkItem/CheckItem";
 
 
 
@@ -29,7 +29,7 @@ const About: FunctionComponent = () => {
             <div className={"container about__container"}>
                 <div className={"about__me"}>
                     <div className={"about__me-image"}>
-                        <img src={AnotherMe} alt={"my picture"}/>
+                        <img src={AnotherMe} alt={"me sitting in a chair"}/>
                     </div>
                 </div>
 
