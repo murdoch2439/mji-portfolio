@@ -64,7 +64,7 @@ const ContactOption : FunctionComponent<props> =({item})=>{
             {icon}
             <h4>{title}</h4>
             <h5>{subTitle}</h5>
-            <a href={action} target={"_blank"}>{actionTitle}</a>
+            <a href={action} target={"__blank"}>{actionTitle}</a>
         </article>
     )
 }
