@@ -1,43 +1,23 @@
 import React, {FunctionComponent} from "react"
 import "./testimonials.css"
-import client1 from "../../assets/review1.jpg"
-import client2 from "../../assets/review4.jpg"
-import client3 from "../../assets/review5.jpg"
+import client1 from "../../assets/bonny.jpg"
+import client3 from "../../assets/mto.jpeg"
 import petronille from "../../assets/petronille.jpg"
-// import client from "../../assets/profile.png"
-// import client from "../../assets/profile.png"
 import TestimonialCard from "./TestimonialCard";
-
-// import Swiper core and required modules
-import {  Pagination } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {  Pagination, } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const data =[
     {
         id:'1',
         avatar:client1,
-        comment:"It was a great experience working with a details oriented person, he always concerns about meeting" +
-            " business need.",
-        name:"Bryan Diam",
-        job_position:"Founder, KolambApp"
+        comment:"It was a positive experience to work with you, you are such a details oriented person and always concerned with the overall experience while addressing client needs.",
+        name:"Bony Isamene",
+        job_position:"President, ADIT Diaspora"
     },
     {
         id:'2',
@@ -51,32 +31,34 @@ const data =[
         id:'3',
         avatar:client3,
         comment:"I really appreciated his high level of professionalism, honesty and integrity. beyond hard skills we still like working with great people socially speaking. Murdoch is one of them.",
-        name:"Christine Thibault",
-        job_position:"CEO, Stopchantage"
+        name:"Obed MUTENGA",
+        job_position:"CEO, Smart Sport Agency"
     },
-
 ]
+
 
 const Testimonials : FunctionComponent =()=>{
     return(
         <section id={"testimonials"}>
             <h5>Review From Client</h5>
             <h2>Testimonials</h2>
-            <Swiper className={"container testimonials__container"}
-                    modules={[ Pagination,  ]}
-                    spaceBetween={40}
-                    slidesPerView={1}
-                    pagination={{ clickable: true }}
+
+            <Swiper
+                className={"container testimonials__container"}
+                spaceBetween={40}
+                modules={[Pagination]}
+                slidesPerView={1}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper:any) => console.log(swiper)}
+                pagination={{ clickable: true }}
             >
-
-
-                {
-                    data.map((item, index)=>{
-                        return(<SwiperSlide key={index}>
-                            <TestimonialCard  item={item} />
-                        </SwiperSlide>)
-                    })
-                }
+                    {
+                        data.map((item, index)=>{
+                            return(<SwiperSlide key={index}>
+                                <TestimonialCard  item={item} />
+                            </SwiperSlide>)
+                        })
+                    }
             </Swiper>
         </section>
     )
