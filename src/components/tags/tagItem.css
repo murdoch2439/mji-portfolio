@@ -2,7 +2,6 @@
     color:var(--color-white);
     border:1px solid var(--color-white) ;
     border-radius: 2rem;
-    /*width:5rem;*/
     display: flex;
     align-items: center;
     justify-content: center;
