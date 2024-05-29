@@ -147,8 +147,6 @@ header{
 
     .services_tag{
         /*display:flex;*/
-        /*align-items:center;*/
-        /*justify-content:center;*/
         gap:0.3rem;
         /*background-color: var(--color-primary);*/
         border-radius: 2rem;
