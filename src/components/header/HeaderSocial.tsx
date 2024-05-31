@@ -29,20 +29,6 @@ const HeaderSocial : FunctionComponent =()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 export default HeaderSocial
