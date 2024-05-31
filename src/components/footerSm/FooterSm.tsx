@@ -15,11 +15,7 @@ const FooterSm : FunctionComponent =()=>{
             </div>
         </div>
     )
-
-
 }
-
-
 
 
 
