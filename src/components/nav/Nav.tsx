@@ -12,14 +12,6 @@ import {useGlobalStore} from "../../store/Context";
 
 
 
-
-
-
-
-
-
-
-
 const Nav : FunctionComponent =()=>{
     const {activeSection, setActiveSection}= useGlobalStore()
     return(
