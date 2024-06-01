@@ -17,6 +17,4 @@ const FooterSm : FunctionComponent =()=>{
     )
 }
 
-
-
 export default FooterSm
