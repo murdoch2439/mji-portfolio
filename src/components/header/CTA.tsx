@@ -14,5 +14,4 @@ const CTA :FunctionComponent =()=>{
     )
 }
 
-
 export default CTA
