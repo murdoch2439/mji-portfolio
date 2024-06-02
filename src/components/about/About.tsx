@@ -7,7 +7,7 @@ import {VscFolderLibrary} from "react-icons/vsc"
 import AboutCard from "./AboutCard";
 import {useGlobalStore} from "../../store/Context";
 // import {AiOutlineCheck} from "react-icons/ai"
-// import CheckItem from "../checkItem/CheckItem";
+
 
 
 
