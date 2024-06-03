@@ -7,7 +7,7 @@ import {useGlobalStore} from "../../store/Context";
 // import {BiBook} from "react-icons/bi";
 
 const Footer : FunctionComponent =()=>{
-    const {activeSection, setActiveSection}= useGlobalStore()
+    // const {activeSection, setActiveSection}= useGlobalStore()
     const currentYear =  new Date().getFullYear();
     return(
         <footer>
