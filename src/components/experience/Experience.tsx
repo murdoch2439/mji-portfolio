@@ -10,8 +10,6 @@ const Experience : FunctionComponent =()=>{
             <h5>What skills I Have</h5>
             <h2>Experience</h2>
 
-
-
             <div className={"container experience__container"}>
                <div className={"experience__fontend"}>
                    {/*<h3>Frontend Development </h3>*/}
