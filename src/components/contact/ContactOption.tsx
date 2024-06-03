@@ -26,15 +26,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 const ContactOption : FunctionComponent<props> =({item})=>{
      const {icon, title, action, subTitle, actionTitle} = item
     return(
