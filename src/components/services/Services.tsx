@@ -64,10 +64,6 @@ const Services : FunctionComponent =()=>{
                 <ServiceCard title={"Content writing"} >
                     <ServiceCardListItem items={CONTENT_CREATION} />
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                 </ServiceCard>
             </div>
         </section>
