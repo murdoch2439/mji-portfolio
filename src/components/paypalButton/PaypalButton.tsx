@@ -4,7 +4,6 @@ const PaypalButton : FunctionComponent=()=>{
     return(
         <div>
 
-
         </div>
 
     )
