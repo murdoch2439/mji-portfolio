@@ -13,11 +13,6 @@ type props={
 
 
 
-
-
-
-
-
 const ExperienceItem : FunctionComponent<props> =({icon, title, experienceLevel})=>{
     return(
         <article className={"experience__details"}>
