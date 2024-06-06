@@ -1,7 +1,7 @@
 import React, {FunctionComponent} from "react"
 import './footerSm.css'
 // import {FaFacebookF} from "react-icons/fa"
-// import {FiInstagram} from "react-icons/fi"
+
 
 
 const FooterSm : FunctionComponent =()=>{
