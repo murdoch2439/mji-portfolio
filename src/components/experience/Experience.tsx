@@ -52,7 +52,7 @@ const Experience : FunctionComponent =()=>{
                 {/*<div className={"experience__backend"}>*/}
                 {/*    <h3>Interests</h3>*/}
                 {/*    <div className={"experience__content"}>*/}
-                {/*        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Psychology"} experienceLevel={""} />*/}
+                {/*        <ExperienceIttle={"Psychology"} experienceLevel={""} />*/}
                 {/*        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Business Growth"} experienceLevel={""} />*/}
                 {/*        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Aviation"} experienceLevel={""} />*/}
                 {/*        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Photography"} experienceLevel={""} />*/}
