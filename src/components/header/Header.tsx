@@ -7,7 +7,7 @@ import {useGlobalStore} from "../../store/Context";
 // import Switch from "../Switch/Switch";
 // import {BsLinkedin} from  "react-icons/bs"
 // import {FaGithub} from "react-icons/fa"
-// import {FiDribbble} from "react-icons/fi"
+
 
 
 const Header : FunctionComponent =()=>{
