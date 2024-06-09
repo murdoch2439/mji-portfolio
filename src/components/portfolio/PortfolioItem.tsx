@@ -20,7 +20,7 @@ const PortfolioItem : FunctionComponent<props> =({item})=>{
             <div className={"portfolio__item-image"}>
                 <img src={cover} alt={""} className={"portfolio__image"} />
             </div>
-            {/*<h3>{title}</h3>*/}
+
             <TagList  items={work}/>
             <div className={"portfolio__item-cta"}>
                 <a href={demo} className={"btn"} target={"__blank"}>See project</a>
