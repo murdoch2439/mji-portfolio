@@ -23,6 +23,8 @@ import fondasi from "../../assets/fondasi.jpeg"
 
 
 
+
+
  const data =[
      {id: "1", title:"Smart Sport Agency", cover:ssa,  github:"https://github.com", demo:"https://ssadrc.com", work:["UX Design", "Web Development"]},
      {id: "2", title:"Granapreme Construction", cover:granapreme,  github:"https://github.com", demo:"https://granapremeconstruction.com", work:["Web Development"]},
