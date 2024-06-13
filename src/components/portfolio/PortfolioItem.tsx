@@ -30,4 +30,7 @@ const PortfolioItem : FunctionComponent<props> =({item})=>{
     )
 }
 
+
+
+
 export default PortfolioItem
