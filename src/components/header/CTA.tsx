@@ -5,6 +5,8 @@ const CTA :FunctionComponent =()=>{
     const {setActiveSection}= useGlobalStore()
 
 
+
+
     return(
         <div className={"cta"}>
             <a
