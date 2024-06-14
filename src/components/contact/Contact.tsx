@@ -42,7 +42,6 @@ const options=[
 
 
 
-
 const Contact : FunctionComponent =()=>{
     const form:any = useRef();
     const sendEmail = async(e:any) => {
