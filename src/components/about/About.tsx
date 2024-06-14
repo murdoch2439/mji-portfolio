@@ -16,7 +16,6 @@ const items =[
 ]
 
 
-
 const About: FunctionComponent = () => {
     const {setActiveSection} = useGlobalStore()
     return (
