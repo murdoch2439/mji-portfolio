@@ -1,6 +1,9 @@
 import React, {FunctionComponent} from "react"
 import './footerSm.css'
-// import {FaFacebookF} from "react-icons/fa"
+
+
+
+
 
 
 
