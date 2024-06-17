@@ -35,6 +35,8 @@ const Services : FunctionComponent =()=>{
         console.log(item)
     },[])
 
+
+
     return(
         <section id={"services"}>
             <h5>What I Offer</h5>
