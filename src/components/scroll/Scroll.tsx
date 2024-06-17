@@ -18,8 +18,11 @@ const Scroll : FunctionComponent=()=>{
             console.log("scolled to 50 true")
         }else{
             setScrolled(true)
-            // console.log("scolled to 50 false")
+            // console.log("scrolled to 50 false")
         }
+
+
+
     }
     return(
         <div className={scrolled ? "scrolled":""}>
