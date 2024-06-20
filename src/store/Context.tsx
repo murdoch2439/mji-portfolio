@@ -6,6 +6,8 @@ export interface BasicGlobalContextType{
     setActiveSection:(state:string)=>void
 }
 
+
+
 export const GlobalContext = createContext<BasicGlobalContextType>({
     loading:false,
     activeSection:"#",
@@ -16,6 +18,7 @@ export const GlobalContext = createContext<BasicGlobalContextType>({
 type Props={
     children:ReactNode
 }
+
 
 
 
