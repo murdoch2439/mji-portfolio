@@ -25,6 +25,7 @@ const Footer : FunctionComponent =()=>{
 
 
 
+
             <div className={"footer__socials"}>
                 <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
                 <a target={"__blank"} href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram /></a>
