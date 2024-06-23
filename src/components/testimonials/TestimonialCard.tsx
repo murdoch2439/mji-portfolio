@@ -16,6 +16,7 @@ type props={
 
 
 
+
 const TestimonialCard : FunctionComponent<props> =({item})=>{
     const {name, avatar, comment, job_position} = item
     return(
