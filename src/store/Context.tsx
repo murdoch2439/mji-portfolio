@@ -8,6 +8,9 @@ export interface BasicGlobalContextType{
 
 
 
+
+
+
 export const GlobalContext = createContext<BasicGlobalContextType>({
     loading:false,
     activeSection:"#",
