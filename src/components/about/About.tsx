@@ -6,7 +6,8 @@ import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
 import AboutCard from "./AboutCard";
 import {useGlobalStore} from "../../store/Context";
-// import {AiOutlineCheck} from "react-icons/ai"
+
+
 
 
 
