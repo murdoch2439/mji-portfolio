@@ -49,7 +49,7 @@ const Experience : FunctionComponent =()=>{
                 {/*    </div>*/}
                 {/*</div>*/}
                 {/*END OF FRONTEND*/}
-                {/*<div className={"experience__backend"}>*/}
+
                 {/*    <h3>Interests</h3>*/}
                 {/*    <div className={"experience__content"}>*/}
                 {/*        <ExperienceIttle={"Psychology"} experienceLevel={""} />*/}
@@ -63,6 +63,10 @@ const Experience : FunctionComponent =()=>{
         </section>
     )
 }
+
+
+
+
 
 
 
