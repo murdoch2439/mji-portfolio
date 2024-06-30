@@ -13,10 +13,8 @@ import FooterSm from "./components/footerSm/FooterSm";
 import { GlobalStore} from './store/Context';
 
 
+
 function App() {
-
-
-
 
   return (
       <>
