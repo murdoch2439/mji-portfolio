@@ -6,6 +6,9 @@ import {IoLogoTwitter} from "react-icons/io"
 import {useGlobalStore} from "../../store/Context";
 // import {BiBook} from "react-icons/bi";
 
+
+
+
 const Footer : FunctionComponent =()=>{
     // const {activeSection, setActiveSection}= useGlobalStore()
     const currentYear =  new Date().getFullYear();
