@@ -9,7 +9,9 @@ import dic from "../../assets/dic.png"
 import ssa from "../../assets/ssa.jpeg"
 import adit from "../../assets/adit.jpeg"
 import granapreme from "../../assets/granapreme.jpeg"
-import fondasi from "../../assets/fondasi.jpeg
+import fondasi from "../../assets/fondasi.jpeg"
+
+
 
 
 
