@@ -17,6 +17,9 @@ import {useGlobalStore} from "../../store/Context";
 
 
 
+
+
+
 const Footer : FunctionComponent =()=>{
     // const {activeSection, setActiveSection}= useGlobalStore()
     const currentYear =  new Date().getFullYear();
