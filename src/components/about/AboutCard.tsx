@@ -21,6 +21,7 @@ type props={
 
 
 
+
 const AboutCard : FunctionComponent<props> =({icon, title, subtitle})=>{
     return(
         <article className={"about__card"}>
