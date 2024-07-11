@@ -34,6 +34,8 @@ const useNumber =(initialValue: number)=>useState<number>(initialValue)
 
 
 
+
+
 const CustomButton: FunctionComponent<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>>& {title?:string}  =({title, children,style,  ...rest})=>{
     return(
         <button {...rest} style={{...style, backgroundColor:"green"}}>
