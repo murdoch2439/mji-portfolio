@@ -13,6 +13,8 @@ import './footerSm.css'
 
 
 
+
+
 const FooterSm : FunctionComponent =()=>{
     const currentYear =  new Date().getFullYear();
 
