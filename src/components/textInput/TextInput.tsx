@@ -15,19 +15,6 @@ type Props={
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const TextInput : FunctionComponent<Props> =({type, label, isTextArea, maxLength})=>{
     return(
         <div className={"form"}>
