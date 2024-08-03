@@ -17,6 +17,8 @@ import 'swiper/css/pagination';
 
 
 
+
+
 const data =[
     {
         id:'1',
