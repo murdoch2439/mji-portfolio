@@ -22,6 +22,8 @@ type Props={
 
 
 
+
+
 const Switch : FunctionComponent<Props> =({rounded,isToggled, onToggle})=>{
     const [isRounded, setIsRounded] = useState("")
     useEffect(()=>{
