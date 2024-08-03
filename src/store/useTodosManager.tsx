@@ -16,6 +16,10 @@ interface Todo {
     text:string
 }
 
+
+
+
+
 type ActionType= | { type:"ADD", text:string } | {type:"REMOVE", id:number}
 
 type props={
