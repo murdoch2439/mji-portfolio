@@ -85,6 +85,8 @@ type props={
 
 
 
+
+
 const CheckItem : FunctionComponent<props> =({item})=>{
     return(
         <div className={"container__check"}>
