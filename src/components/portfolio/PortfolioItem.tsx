@@ -41,6 +41,9 @@ type props={
 
 
 
+
+
+
 const PortfolioItem : FunctionComponent<props> =({item})=>{
     const {cover, demo, work} = item
     return(
