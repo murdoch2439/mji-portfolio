@@ -23,6 +23,8 @@ const Scroll : FunctionComponent=()=>{
 
 
 
+
+
         window.addEventListener("scroll", onScroll)
         return ()=> window.removeEventListener("scroll", onScroll)
     },[scrolled])
