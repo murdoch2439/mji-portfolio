@@ -44,6 +44,8 @@ type props={
 
 
 
+
+
 const ServiceCard : FunctionComponent<props> =({children, title})=>{
     return(
         <article className={"service"}>
