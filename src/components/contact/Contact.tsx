@@ -1,52 +1,11 @@
-import React, {FunctionComponent, useRef} from 'react';
+import React, {FunctionComponent, useRef, useState} from 'react';
 import './contact.css'
 import {MdOutlineMail} from "react-icons/md"
 import {RiMessengerLine} from "react-icons/ri"
 import {BsWhatsapp} from "react-icons/bs"
 import ContactOption from "./ContactOption";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import TextInput from "../textInput/TextInput";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const options=[
@@ -78,30 +37,25 @@ const options=[
 
 
 
-
-
-
-
-
-
 const Contact : FunctionComponent =()=>{
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [emailSent, setEmailSent] = useState(false)
     const form:any = useRef();
     const sendEmail = async(e:any) => {
         e.preventDefault();
-        const formInputs ={name:form.current[0].value, email:form.current[1].value, object:form.current[2].value, message:form.current[3].value}
-        // console.log("E target ===>",formInputs)
-        // console.log("E target ===>",form.current[1].value)
+        const formInputs:any ={name:form.current[0].value, email:form.current[1].value, phone:form.current[2].value, object:form.current[3].value, message:form.current[4].value}
+        console.log("E target ===>",formInputs)
 
-        // // // e.preventDefault();
-        // try{
-        //     const response = await emailjs.sendForm('service_qf275h2', 'template_bhnqhc1', form.current, 'osiNwt610-fXn1yTV')
-        //     e.target.reset()
-        //     console.log("Response from sending email ==>",response.text);
-        // }catch(error:any){
-        //     console.log("Error on sending mail",error.text);
-        // }
+        try{
+           const response = await emailjs.send('service_4g3mrik', 'template_qtbqx7e', formInputs, {
+               publicKey: 'XIMcLh0iWKbyugbzS',
+           })
+           e.target.reset()
+           console.log("Response from sending email ==>",response.text);
+         }catch(error:any){
+           console.log("Error on sending mail",error.text);
+         }
     }
-
 
 
 
@@ -123,9 +77,6 @@ const Contact : FunctionComponent =()=>{
 
 
 
-
-
-
                     {
                         options.map((item, index)=>{
                             return(<ContactOption key={index} item={item} />)
@@ -134,9 +85,10 @@ const Contact : FunctionComponent =()=>{
 
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
-                    <TextInput label={"Full Name"} maxLength={30} />
-                    <TextInput label={"Your Email"} type={"email"} maxLength={20} />
-                    <TextInput label={"What you write for"}  maxLength={100}/>
+                    <TextInput label={"Full Name"} name={"fullName"} maxLength={30} />
+                    <TextInput label={"Your Email"} type={"email"} name={"email"} maxLength={20} />
+                    <TextInput label={"Your Phone"} type={"tel"} name={"phone"} maxLength={20} />
+                    <TextInput label={"What you write for"} type={'"text'} name={"object"} maxLength={100}/>
                     {/*<TextInput label={"Your Email"} type={"email"} isTextArea={true} />*/}
                     {/*<input type={"text"} name={"name"} placeholder={"Your Full Name"} required/>*/}
                     {/*<input type={"email"} name={"email"} placeholder={"Your Email"} required/>*/}
