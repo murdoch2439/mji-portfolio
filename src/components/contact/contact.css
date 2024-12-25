@@ -5,6 +5,31 @@
     gap:12%
 }
 
+.flex-direction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem 0
+}
+
+.success-message{
+    text-align: center;
+}
+
+
+.circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:#6de36d ;
+}
+
+
+.checkIcon{
+    font-size: 4rem;
+    color: white;
+}
+
 
 
 
