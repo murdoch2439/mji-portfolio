@@ -5,47 +5,6 @@ type props={
     title:string
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const ServiceCard : FunctionComponent<props> =({children, title})=>{
     return(
         <article className={"service"}>
