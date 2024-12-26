@@ -9,40 +9,6 @@ import {useGlobalStore} from "../../store/Context";
 // import {FaGithub} from "react-icons/fa"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Header : FunctionComponent =()=>{
     const { setActiveSection }= useGlobalStore()
     // const [isToggled, setIsToggled]= useState(true)
