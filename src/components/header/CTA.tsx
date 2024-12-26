@@ -4,46 +4,6 @@ import {useGlobalStore} from "../../store/Context";
 const CTA :FunctionComponent =()=>{
     const {setActiveSection}= useGlobalStore()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return(
         <div className={"cta"}>
             <a
