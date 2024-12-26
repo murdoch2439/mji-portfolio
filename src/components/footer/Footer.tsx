@@ -11,11 +11,6 @@ import {IoLogoMedium} from "react-icons/io5";
 
 
 
-
-
-
-
-
 const Footer : FunctionComponent =()=>{
     // const {activeSection, setActiveSection}= useGlobalStore()
     const currentYear =  new Date().getFullYear();
@@ -32,11 +27,6 @@ const Footer : FunctionComponent =()=>{
                 <li><a href={"#testimonials"}>Testimonials</a></li>
                 {/*<li><a href={"#cclassName={activeSection === "#contact" ? "active":""}>Contact</a></li>*/}
             </ul>
-
-
-
-
-
 
 
             <div className={"footer__socials"}>
