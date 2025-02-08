@@ -11,6 +11,7 @@ import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import FooterSm from "./components/footerSm/FooterSm";
 import { GlobalStore} from './store/Context';
+import SectionComponent from "./components/section/SectionComponent";
 
 
 
@@ -20,14 +21,21 @@ function App() {
       <>
         <GlobalStore>
           <div className="App">
-            <Header />
+            <SectionComponent  id={''}><Header /></SectionComponent>
+
+            {/*<Header />*/}
             <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
+            <SectionComponent  id={'about'}><About /></SectionComponent>
+            <SectionComponent  id={'experience'}><Experience /></SectionComponent>
+            <SectionComponent  id={'services'}><Services /></SectionComponent>
+            <SectionComponent  id={'contact'}><Contact /></SectionComponent>
+
+            {/*<About />*/}
+            {/*<Experience />*/}
+            {/*<Services />*/}
+            {/*<Portfolio />*/}
+            {/*<Testimonials />*/}
+            {/*<Contact />*/}
             <Footer />
             <FooterSm />
           </div>
