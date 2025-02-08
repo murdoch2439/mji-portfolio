@@ -35,10 +35,6 @@ const Header : FunctionComponent =()=>{
 
 
 
-
-
-
-
                <HeaderSocial />
                <div className={"me"}>
                    {/*<div>*/}
