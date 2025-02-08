@@ -14,12 +14,6 @@ const Header : FunctionComponent =()=>{
     // const [isToggled, setIsToggled]= useState(true)
     return(
 
-
-
-
-
-
-
        <header>
            <div className={"container header__container"}>
                {/*<div className={"switch"}>*/}
