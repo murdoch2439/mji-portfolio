@@ -54,7 +54,7 @@ const Nav : FunctionComponent =()=>{
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                  
+
                 }
             });
         }, observerOptions);
@@ -65,7 +65,7 @@ const Nav : FunctionComponent =()=>{
 
         return () => {
             sectionRefs.current.forEach(ref => {
-                if (ref) observer.unobserve(ref);
+            
             });
         };
     }, []);
