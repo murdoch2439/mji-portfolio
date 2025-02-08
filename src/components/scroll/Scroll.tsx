@@ -15,18 +15,6 @@ const Scroll : FunctionComponent=()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         window.addEventListener("scroll", onScroll)
         return ()=> window.removeEventListener("scroll", onScroll)
     },[scrolled])
@@ -38,11 +26,6 @@ const Scroll : FunctionComponent=()=>{
             setScrolled(true)
             // console.log("scrolled to 50 false")
         }
-
-
-
-
-
 
 
 
