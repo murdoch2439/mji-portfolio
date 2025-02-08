@@ -82,13 +82,13 @@ const Nav : FunctionComponent =()=>{
 
         <nav>
             {sections.map(section => (
-                // <li key={section.name} className={activeSection === section.id ? 'active' : ''}>
+
                     <a key={section.id} href={`#${section.id}`} onClick={()=> {
                         if (section.id !== '') {
                             setActiveSection(section.id);
                         }
                     }} className={activeSection === section.id ? "active":""} >{section.icon}</a>
-                // </li>
+         
             ))}
 
 
