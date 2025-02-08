@@ -8,6 +8,7 @@ const CTA :FunctionComponent =()=>{
         <div className={"cta"}>
             <a
                 href={"#portfolio"}
+                onClick={()=>setActiveSection("#portfolio")}
                 // download
                 className={"btn"}>See my works</a>
             <a href={"#contact"} onClick={()=>setActiveSection("#contact")}  className={"btn btn-primary"}>Let's Talk</a>
