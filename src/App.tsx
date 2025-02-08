@@ -28,6 +28,8 @@ function App() {
             <SectionComponent  id={'about'}><About /></SectionComponent>
             <SectionComponent  id={'experience'}><Experience /></SectionComponent>
             <SectionComponent  id={'services'}><Services /></SectionComponent>
+            <SectionComponent  id={'portfolio'}><Portfolio /></SectionComponent>
+            <SectionComponent  id={'testimonials'}><Testimonials /></SectionComponent>
             <SectionComponent  id={'contact'}><Contact /></SectionComponent>
 
             {/*<About />*/}
