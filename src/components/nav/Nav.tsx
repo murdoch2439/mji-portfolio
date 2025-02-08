@@ -65,13 +65,12 @@ const Nav : FunctionComponent =()=>{
 
         return () => {
             sectionRefs.current.forEach(ref => {
-            
+
             });
         };
     }, []);
     return (
         // <nav>
-        //
         //     <a href={"#"} onClick={()=>setActiveSection("#")} className={activeSection === "#" ? "active":""}><AiOutlineHome /></a>
         //     <a href={"#about"} onClick={()=>setActiveSection("#about")} className={activeSection === "#about" ? "active":""}><AiOutlineUser /></a>
         //     <a href={"#experience"} onClick={()=>setActiveSection("#experience")} className={activeSection === "#experience" ? "active":""}><BiBook /></a>
