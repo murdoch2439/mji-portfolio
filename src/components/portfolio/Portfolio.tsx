@@ -29,7 +29,6 @@ import fondasi from "../../assets/fondasi.jpeg"
 
 
 
-
 const Portfolio : FunctionComponent =()=>{
     return(
         <section id={"portfolio"}>
