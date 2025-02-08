@@ -5,6 +5,7 @@ import {FiInstagram} from "react-icons/fi"
 import {IoLogoTwitter} from "react-icons/io"
 import {useGlobalStore} from "../../store/Context";
 import {IoLogoMedium} from "react-icons/io5";
+import { BsTwitterX } from "react-icons/bs";
 // import {BiBook} from "react-icons/bi";
 
 
@@ -32,7 +33,7 @@ const Footer : FunctionComponent =()=>{
             <div className={"footer__socials"}>
                 <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
                 <a target={"__blank"} href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram /></a>
-                <a target={"__blank"} href={"https://x.com/journey2yrself"}><IoLogoTwitter /></a>
+                <a target={"__blank"} href={"https://x.com/journey2yrself"}><BsTwitterX /></a>
                 <a target={"__blank"} href={"https://medium.com/@murdochkhallz"}><IoLogoMedium /></a>
             </div>
             <div className={"footer__copyright"}>
