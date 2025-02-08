@@ -54,7 +54,7 @@ const Nav : FunctionComponent =()=>{
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // setActiveSectionO(entry.target.);
+                  
                 }
             });
         }, observerOptions);
