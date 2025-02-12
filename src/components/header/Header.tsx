@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import Profile from "../../assets/profile.png"
 import HeaderSocial from "./HeaderSocial";
 import {useGlobalStore} from "../../store/Context";
+import Switch from "../Switch/Switch";
 // import Switch from "../Switch/Switch";
 // import {BsLinkedin} from  "react-icons/bs"
 // import {FaGithub} from "react-icons/fa"
@@ -31,8 +32,6 @@ const Header : FunctionComponent =()=>{
                <h4 className={"intro"} >I can help you build a digital product, automate your business process, create your website or add a new feature to boost and growth and online visibility. But first...</h4>
 
                <CTA />
-
-
 
 
                <HeaderSocial />
