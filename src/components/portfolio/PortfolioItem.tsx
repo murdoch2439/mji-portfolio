@@ -1,7 +1,6 @@
 import React, {FunctionComponent} from "react"
 import TagList from "../tags/TagList";
 
-
 type props={
     item:any
 }
