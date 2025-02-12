@@ -13,38 +13,6 @@ import {useGlobalStore} from "../../store/Context";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const items =[
     {id:"1", title:"Private"},
     {id:"2", title:"Public"},
