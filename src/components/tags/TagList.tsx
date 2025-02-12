@@ -37,7 +37,7 @@ const TagList : FunctionComponent<props> =({items})=>{
             {
                 items.map((item, index)=>{
                     return(
-                            <TagItem key={index} title={item} />
+                            <TagItem key={index} title={`#${item}`} />
                     )
                 })
             }
