@@ -2,10 +2,11 @@ import React, {FunctionComponent, ReactNode} from "react"
 
 type props={
     children: ReactNode;
-    title:string
+    title:string;
+    isPopular?: boolean
 }
 
-const ServiceCard : FunctionComponent<props> =({children, title})=>{
+const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
     return(
         <article className={"service"}>
             <div className={"service__head"}>
