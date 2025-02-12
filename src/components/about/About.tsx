@@ -69,7 +69,7 @@ const About: FunctionComponent = () => {
                 <div className={"about__content"}>
                     <div className={"about__cards"}>
                         <AboutCard icon={<FaAward className={"about__icon"}/>} title={"Experience"}
-                                   subtitle={"4+ Years Working"}/>
+                                   subtitle={"4+ Years"}/>
                         <AboutCard icon={<FiUsers className={"about__icon"}/>} title={"Clients"}
                                    subtitle={"10+ Worldwide"}/>
                         <AboutCard icon={<VscFolderLibrary className={"about__icon"}/>} title={"Projects"}
