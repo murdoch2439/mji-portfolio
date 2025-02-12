@@ -26,7 +26,7 @@ const Footer : FunctionComponent =()=>{
                 {/*<li><a href={"#services"} onClick={()=>setActiveSection("#services")} className={activeSection === "#services" ? "active":""}>Services</a></li>*/}
                 <li><a href={"#portfolio"}>Portfolio</a></li>
                 <li><a href={"#testimonials"}>Testimonials</a></li>
-                {/*<li><a href={"#cclassName={activeSection === "#contact" ? "active":""}>Contact</a></li>*/}
+                
             </ul>
 
 
