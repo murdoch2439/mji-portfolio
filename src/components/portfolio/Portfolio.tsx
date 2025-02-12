@@ -23,7 +23,6 @@ import fondasi from "../../assets/fondasi.jpeg"
      {id: "7", title:"Rebranding of grocery eCommerce", cover:grocery,  github:"https://github.com", demo:"https://www.figma.com/proto/TdFNIsIkUMFodv1ktCrJpX/Grocery?node-id=136%3A206&scaling=min-zoom&page-id=136%3A205&starting-point-node-id=136%3A206", work:["UX Design",]},
      {id: "8", title:"Fullstack development & copy writing", cover:dic, github:"https://github.com", demo:"https://www.figma.com/proto/HdJ0apbneCIFEcho2SRUNx/Digital-invest-corporate?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&node-id=1%3A2&hide-ui=1", work:["UX Design",]},
      {id: "9", title:"Fondation Silinta", cover:fondasi,  github:"https://github.com", demo:"https://fondationsilinta.com", work:["Web Development"]},
-
  ]
 
 
@@ -38,7 +37,7 @@ const Portfolio : FunctionComponent =()=>{
                {/*<article className={"portfolio__item"}>*/}
                {/*   <div className={"portfolio__item-image"}>*/}
                {/*      <img src={image} alt={""} />*/}
-               {/*   </div>*/}
+
                {/*    <h3>This is a portfolio item title</h3>*/}
                {/*    <a href={"https://github.com"} className={"btn"} target={"_blakc"}>Github</a>*/}
                {/*    <a href={"https://github.com"} className={"btn btn-primary"} target={"_blank"}>Live Demo</a>*/}
