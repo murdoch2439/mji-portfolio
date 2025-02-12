@@ -6,35 +6,26 @@ import ServiceCardListItem from "./ServiceCardListItem";
 
 
 
-
-
 const UI_UXDESIGN=[
     "Product Design",
     "Wire framing",
     "Prototyping",
-    "Brand & rebranding",
-    "Landing page"
 ]
 
 const WEB_DEVELOPMENT=[
-    "Research & analysis",
-    "Features definition",
     "Website",
     "Web Apps",
     "Mobile Apps",
     "E-commerce",
+    "API Conception",
     "Dev Ops",
     "Maintenance"
 ]
 
 
 
-
-
-
 const CONTENT_CREATION=[
     "Website",
-    "Social media marketing",
     "Blog articles",
     "Newsletter"
 ]
