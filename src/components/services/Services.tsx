@@ -30,12 +30,11 @@ const CONTENT_CREATION=[
     "Newsletter"
 ]
 
+
 const Services : FunctionComponent =()=>{
     const onListClick= useCallback((item:string)=>{
         console.log(item)
     },[])
-
-
 
     return(
         <section id={"services"}>
@@ -49,7 +48,7 @@ const Services : FunctionComponent =()=>{
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
+
                 </ServiceCard>
 
                 <ServiceCard title={"Development"} >
@@ -57,7 +56,7 @@ const Services : FunctionComponent =()=>{
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListImet consecteturelit."} />*/}
+
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                     {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
