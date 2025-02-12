@@ -6,7 +6,7 @@ import ServiceCardListItem from "./ServiceCardListItem";
 
 
 
-const UI_UXDESIGN=[
+const UI_UX_DESIGN=[
     "Product Design",
     "Wire framing",
     "Prototyping",
@@ -43,28 +43,18 @@ const Services : FunctionComponent =()=>{
             <div className={"container services__container"}>
 
                 <ServiceCard title={"UI/UX Design"} >
-                    <ServiceCardListItem items={UI_UXDESIGN} onClick={onListClick} />
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
+                    <ServiceCardListItem items={UI_UX_DESIGN} onClick={onListClick} />
 
                 </ServiceCard>
 
-                <ServiceCard title={"Development"} >
+                <ServiceCard title={"Development"} isPopular={true} >
                     <ServiceCardListItem items={WEB_DEVELOPMENT} />
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
 
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
                 </ServiceCard>
 
                 <ServiceCard title={"Content writing"} >
                     <ServiceCardListItem items={CONTENT_CREATION} />
-                    {/*<ServiceCardListItem title={"Lorem, ipsum dolor sit amet consecteturelit."} />*/}
+
                 </ServiceCard>
             </div>
         </section>
