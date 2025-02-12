@@ -18,7 +18,7 @@ const Footer : FunctionComponent =()=>{
     return(
         <footer>
 
-            <a href={"#about"} className={"footer__logo"}>Murdoch Kalonji</a>
+            <a href={"#about"} className={"footer__logo"}>Mji Website</a>
             <ul className={"permalinks"}>
                 {/*<li><a href={"#"} onClick={()=>setActiveSection("#")} className={activeSection === "#" ? "active":""}>Home</a></li>*/}
                 {/*<li><a href={"#about"} onClick={()=>setActiveSection("#about")} className={activeSection === "#about" ? "active":""}>About</a></li>*/}
@@ -34,7 +34,7 @@ const Footer : FunctionComponent =()=>{
                 <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
                 <a target={"__blank"} href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram /></a>
                 <a target={"__blank"} href={"https://x.com/journey2yrself"}><BsTwitterX /></a>
-                <a target={"__blank"} href={"https://medium.com/@murdochkhallz"}><IoLogoMedium /></a>
+                <a target={"__blank"} href={"https://medium.com/@journey2yrself"}><IoLogoMedium /></a>
             </div>
             <div className={"footer__copyright"}>
                 <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>
