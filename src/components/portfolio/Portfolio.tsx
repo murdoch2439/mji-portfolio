@@ -38,7 +38,7 @@ const Portfolio : FunctionComponent =()=>{
                {/*    <h3>This is a portfolio item title</h3>*/}
                {/*    <a href={"https://github.com"} className={"btn"} target={"_blakc"}>Github</a>*/}
                {/*    <a href={"https://github.com"} className={"btn btn-primary"} target={"_blank"}>Live Demo</a>*/}
-               {/*</article>*/}
+
 
                 {data.map((item, index)=> <PortfolioItem key={index} item={item} /> )}
                 {/*<PortfolioItem title={"This is a portfolio item title"} cover={image} />*/}
