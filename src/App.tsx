@@ -37,7 +37,6 @@ function App() {
             {/*<Services />*/}
             {/*<Portfolio />*/}
             {/*<Testimonials />*/}
-            {/*<Contact />*/}
             <Footer />
             <FooterSm />
           </div>
