@@ -10,6 +10,8 @@ type props={
 const SectionComponent : FunctionComponent<props> =({children, id})=> {
     const {setActiveSection} = useGlobalStore()
     const sectionRef = useRef(null);
+    const timeoutRef:any= useRef(null);
+
 
     useEffect(() => {
         const observerOptions = {
@@ -21,7 +23,12 @@ const SectionComponent : FunctionComponent<props> =({children, id})=> {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    setActiveSection(id);
+                    clearTimeout(timeoutRef.current);
+
+                    timeoutRef.current = setTimeout(() => {
+                        setActiveSection(id);
+                    }, 50);
+                    // setActiveSection(id);
                 }
             });
         }, observerOptions);
@@ -34,8 +41,11 @@ const SectionComponent : FunctionComponent<props> =({children, id})=> {
             if (sectionRef.current) {
                 observer.unobserve(sectionRef.current);
             }
+            clearTimeout(timeoutRef.current);
         };
     }, [id, setActiveSection]);
+
+
 
     return (
         <>
@@ -49,8 +59,6 @@ const SectionComponent : FunctionComponent<props> =({children, id})=> {
                     </section>
             }
         </>
-
-
 
 )
 }
