@@ -2,14 +2,9 @@ import React, {FunctionComponent} from "react"
 import './footer.css'
 import {FaFacebookF} from "react-icons/fa"
 import {FiInstagram} from "react-icons/fi"
-import {IoLogoTwitter} from "react-icons/io"
-import {useGlobalStore} from "../../store/Context";
 import {IoLogoMedium} from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
 // import {BiBook} from "react-icons/bi";
-
-
-
 
 
 const Footer : FunctionComponent =()=>{
@@ -21,10 +16,9 @@ const Footer : FunctionComponent =()=>{
             {/*    <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>*/}
             {/*</div>*/}
 
-            <a href={"#about"} className={"footer__logo"}>Mji Website</a>
+            <a href={"#about"} className={"footer__logo"}>Mji's Portfolio</a>
             <ul className={"permalinks"}>
-
-
+                
                 {/*<li><a href={"#services"} onClick={()=>setActiveSection("#services")} className={activeSection === "#services" ? "active":""}>Services</a></li>*/}
                 <li><a href={"#portfolio"}>Portfolio</a></li>
                 <li><a href={"#testimonials"}>Testimonials</a></li>
