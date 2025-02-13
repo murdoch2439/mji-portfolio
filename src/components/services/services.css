@@ -47,6 +47,7 @@
 
 }
 
+
 .service__list-icon{
    color:var(--color-primary);
    margin-top: 2px;
@@ -66,6 +67,7 @@
         height:auto;
     }
 }
+
 
 /*============== Media QUERIES (Small DEVices) ==================*/
 @media screen and (max-width:600px){
