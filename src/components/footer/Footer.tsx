@@ -12,13 +12,10 @@ const Footer : FunctionComponent =()=>{
     const currentYear =  new Date().getFullYear();
     return(
         <footer>
-            {/*<div className={"footer__copyright"}>*/}
-            {/*    <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>*/}
-            {/*</div>*/}
 
             <a href={"#about"} className={"footer__logo"}>Mji's Portfolio</a>
             <ul className={"permalinks"}>
-                
+
                 {/*<li><a href={"#services"} onClick={()=>setActiveSection("#services")} className={activeSection === "#services" ? "active":""}>Services</a></li>*/}
                 <li><a href={"#portfolio"}>Portfolio</a></li>
                 <li><a href={"#testimonials"}>Testimonials</a></li>
