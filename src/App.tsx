@@ -23,22 +23,25 @@ function App() {
           <div className="App">
             <SectionComponent  id={''}><Header /></SectionComponent>
 
-            {/*<Header />*/}
             <Nav />
-            <SectionComponent  id={'about'}><About /></SectionComponent>
-            <SectionComponent  id={'experience'}><Experience /></SectionComponent>
-            <SectionComponent  id={'services'}><Services /></SectionComponent>
-            <SectionComponent  id={'portfolio'}><Portfolio /></SectionComponent>
-            <SectionComponent  id={'testimonials'}><Testimonials /></SectionComponent>
-            <SectionComponent  id={'contact'}><Contact /></SectionComponent>
+
+              <SectionComponent  id={'about'}><About /></SectionComponent>
+              <SectionComponent  id={'experience'}><Experience /></SectionComponent>
+              <SectionComponent  id={'services'}><Services /></SectionComponent>
+              <SectionComponent  id={'portfolio'}><Portfolio /></SectionComponent>
+              <SectionComponent  id={'testimonials'}><Testimonials /></SectionComponent>
+              <SectionComponent  id={'contact'}><Contact /></SectionComponent>
+              <Footer />
+              <FooterSm />
+
+
 
             {/*<About />*/}
             {/*<Experience />*/}
             {/*<Services />*/}
             {/*<Portfolio />*/}
             {/*<Testimonials />*/}
-            <Footer />
-            <FooterSm />
+
           </div>
         </GlobalStore>
       </>
