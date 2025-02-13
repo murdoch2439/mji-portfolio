@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useEffect, useRef, useState,} from "react"
+import React, {FunctionComponent, useEffect, useState,} from "react"
 import './nav.css'
 import {AiOutlineHome, AiOutlineUser} from "react-icons/ai"
 import {BiBook, BiMessageSquareDetail} from "react-icons/bi"
@@ -42,8 +42,6 @@ const Nav : FunctionComponent =()=>{
             icon:<BiMessageSquareDetail />
         },
     ])
-
-    const sectionRefs = useRef([]);
 
 
     useEffect(() => {
