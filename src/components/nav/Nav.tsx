@@ -6,13 +6,14 @@ import {RiServiceLine} from "react-icons/ri"
 import {useGlobalStore} from "../../store/Context";
 import {MdWorkOutline} from "react-icons/md";
 import {FaRegNoteSticky} from "react-icons/fa6";
-// import { MdWorkOutline } from "react-icons/md";
 
 
 
 const Nav : FunctionComponent =()=>{
     const {activeSection, setActiveSection}= useGlobalStore()
-    const sections = [{
+    const [sections, setSections] = useState(
+        [
+        {
         id: '',
         icon:<AiOutlineHome />
     },
@@ -28,21 +29,70 @@ const Nav : FunctionComponent =()=>{
             id: 'services',
             icon:<RiServiceLine />
         },
-        // {
-        //     name: 'portfolio',
-        //     icon:<MdWorkOutline />
-        // },
-        // {
-        //     name: 'testimonials',
-        //     icon:<FaRegNoteSticky />
-        // }
+        {
+            id: 'portfolio',
+            icon:<MdWorkOutline />
+        },
+        {
+            id: 'testimonials',
+            icon:<FaRegNoteSticky />
+        },
         {
             id: 'contact',
             icon:<BiMessageSquareDetail />
         },
-        ];
+    ])
 
     const sectionRefs = useRef([]);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            const isMobile = window.innerWidth <= 600;
+            if (isMobile) {
+                setSections((prevSections) => prevSections.filter((_, index) => index < 4 || index === 6));
+            } else {
+                // Revert back to original sections if not mobile
+                setSections([
+                    {
+                    id: '',
+                    icon:<AiOutlineHome />
+                },
+                    {
+                        id: 'about',
+                        icon:<AiOutlineUser  />
+                    },
+                    {
+                        id: 'experience',
+                        icon:<BiBook />
+                    },
+                    {
+                        id: 'services',
+                        icon:<RiServiceLine />
+                    },
+                    {
+                        id: 'portfolio',
+                        icon:<MdWorkOutline />
+                    },
+                    {
+                        id: 'testimonials',
+                        icon:<FaRegNoteSticky />
+                    },
+                    {
+                        id: 'contact',
+                        icon:<BiMessageSquareDetail />
+                    },
+                ]);
+            }
+        };
+
+        handleResize(); // Call once on mount
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const observerOptions = {
@@ -54,7 +104,7 @@ const Nav : FunctionComponent =()=>{
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-
+                    // setActiveSection(id);
                 }
             });
         }, observerOptions);
@@ -88,7 +138,7 @@ const Nav : FunctionComponent =()=>{
                             setActiveSection(section.id);
                         }
                     }} className={activeSection === section.id ? "active":""} >{section.icon}</a>
-         
+
             ))}
 
 
@@ -96,7 +146,7 @@ const Nav : FunctionComponent =()=>{
             {/*   className={activeSection === "#" ? "active" : ""}><AiOutlineHome/></a>*/}
             {/*<a href={"#about"} onClick={() => setActiveSection("#about")}*/}
             {/*   className={activeSection === "#about" ? "active" : ""}><AiOutlineUser/></a>*/}
-            {/*<a href={"#experience"} onClick={() => setActiveSection("#experience")}*/}
+
             {/*   className={activeSection === "#experience" ? "active" : ""}><BiBook/></a>*/}
             {/*<a href={"#services"} onClick={() => setActiveSection("#services")}*/}
             {/*   className={activeSection === "#services" ? "active" : ""}><RiServiceLine/></a>*/}
