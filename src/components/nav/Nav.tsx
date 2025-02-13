@@ -94,31 +94,8 @@ const Nav : FunctionComponent =()=>{
         };
     }, []);
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null, // use the viewport as the root
-            rootMargin: '0px',
-            threshold: 0.5 // 50% of the section must be visible
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // setActiveSection(id);
-                }
-            });
-        }, observerOptions);
 
-        sectionRefs.current.forEach(ref => {
-            if (ref) observer.observe(ref);
-        });
-
-        return () => {
-            sectionRefs.current.forEach(ref => {
-
-            });
-        };
-    }, []);
     return (
         // <nav>
         //     <a href={"#"} onClick={()=>setActiveSection("#")} className={activeSection === "#" ? "active":""}><AiOutlineHome /></a>
