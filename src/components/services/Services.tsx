@@ -5,7 +5,6 @@ import ServiceCard from "./ServiceCard";
 import ServiceCardListItem from "./ServiceCardListItem";
 
 
-
 const UI_UX_DESIGN=[
     "Product Design",
     "Wire framing",
