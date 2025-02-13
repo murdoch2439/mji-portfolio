@@ -2,7 +2,6 @@ import React, {FunctionComponent} from "react"
 import './footerSm.css'
 
 
-
 const FooterSm : FunctionComponent =()=>{
     const currentYear =  new Date().getFullYear();
 
@@ -14,5 +13,6 @@ const FooterSm : FunctionComponent =()=>{
         </div>
     )
 }
+
 
 export default FooterSm
