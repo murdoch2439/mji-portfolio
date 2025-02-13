@@ -17,6 +17,9 @@ const Footer : FunctionComponent =()=>{
     const currentYear =  new Date().getFullYear();
     return(
         <footer>
+            {/*<div className={"footer__copyright"}>*/}
+            {/*    <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>*/}
+            {/*</div>*/}
 
             <a href={"#about"} className={"footer__logo"}>Mji Website</a>
             <ul className={"permalinks"}>
@@ -30,10 +33,11 @@ const Footer : FunctionComponent =()=>{
 
 
             <div className={"footer__socials"}>
-                <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF /></a>
-                <a target={"__blank"} href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram /></a>
-                <a target={"__blank"} href={"https://x.com/journey2yrself"}><BsTwitterX /></a>
-                <a target={"__blank"} href={"https://medium.com/@journey2yrself"}><IoLogoMedium /></a>
+                <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF/></a>
+                <a target={"__blank"}
+                   href={"https://instagram.com/__hmr2k00_storyteller___?igsh=Y2lxdW8zYmVtOXJn"}><FiInstagram/></a>
+                <a target={"__blank"} href={"https://x.com/journey2yrself"}><BsTwitterX/></a>
+                <a target={"__blank"} href={"https://medium.com/@journey2yrself"}><IoLogoMedium/></a>
             </div>
             <div className={"footer__copyright"}>
                 <small>&copy; {currentYear} <a href={"#"}>Mji</a> &nbsp;| All rights reserved.</small>
