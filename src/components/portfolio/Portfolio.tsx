@@ -34,8 +34,6 @@ import sr7 from "../../assets/sr7.jpg"
  ]
 
 
-
-
 const Portfolio : FunctionComponent =()=>{
     return(
         <section id={"portfolio"}>
