@@ -6,35 +6,6 @@ import ExperienceItem from "./ExperienceItem";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Experience : FunctionComponent =()=>{
     return(
         <section id={"experience"}>
@@ -44,27 +15,33 @@ const Experience : FunctionComponent =()=>{
             <div className={"container experience__container"}>
                <div className={"experience__fontend"}>
                    {/*<h3>Frontend Development </h3>*/}
-                   <h3>Website</h3>
+                   <h3>Frontend</h3>
                    <div className={"experience__content"}>
 
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"HTML"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"CSS"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"JavaScript"} experienceLevel={"Experienced"} />
+                       <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Python"} experienceLevel={"Intermediate"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Material UI"} experienceLevel={"Experienced"} />
+                       <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React JS"} experienceLevel={"Experienced"} />
+                       <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React Native"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"WordPress"} experienceLevel={"Experienced"} />
+
                    </div>
                </div>
 
                 {/*END OF FRONTEND*/}
                 <div className={"experience__backend"}>
                     {/*<h3>Backend Development </h3>*/}
-                    <h3>Web/mobile Application</h3>
+                    <h3>Backend</h3>
                     <div className={"experience__content"}>
                         <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Node JS"} experienceLevel={"Experienced"} />
                         <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Express"} experienceLevel={"Experienced"} />
                         <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"MongoDB"} experienceLevel={"Experienced"} />
-                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React JS"} experienceLevel={"Experienced"} />
-                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React Native"} experienceLevel={"Experienced"} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"SQLITE"} experienceLevel={"Experienced"} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"NGINX"} experienceLevel={"Experienced"} />
+                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"AWS"} experienceLevel={"Experienced"} />
+
                     </div>
                 </div>
 
