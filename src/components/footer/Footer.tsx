@@ -4,7 +4,6 @@ import {FaFacebookF} from "react-icons/fa"
 import {FiInstagram} from "react-icons/fi"
 import {IoLogoMedium} from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
-// import {BiBook} from "react-icons/bi";
 
 
 const Footer : FunctionComponent =()=>{
