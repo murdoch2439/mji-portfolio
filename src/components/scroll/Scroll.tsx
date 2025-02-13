@@ -17,10 +17,9 @@ const Scroll : FunctionComponent=()=>{
     const onScroll=()=>{
         if(window.screenY > 50){
             setScrolled(false)
-            console.log("scolled to 50 true")
+            console.log("scroll to 50 true")
         }else{
             setScrolled(true)
-            // console.log("scrolled to 50 false")
         }
 
 
@@ -35,11 +34,6 @@ const Scroll : FunctionComponent=()=>{
         </div>
     )
 }
-
-
-
-
-
 
 
 
