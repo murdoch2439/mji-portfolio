@@ -21,7 +21,6 @@ const Footer : FunctionComponent =()=>{
                 <li><a href={"#testimonials"}>Testimonials</a></li>
             </ul>
 
-
             <div className={"footer__socials"}>
                 <a target={"__blank"} href={"https://web.facebook.com/murdoch.khallz"}><FaFacebookF/></a>
                 <a target={"__blank"}
