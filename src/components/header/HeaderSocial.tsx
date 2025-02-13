@@ -4,7 +4,6 @@ import {FaGithub} from "react-icons/fa"
 import {FiDribbble} from "react-icons/fi"
 
 
-
 const HeaderSocial : FunctionComponent =()=>{
     return(
         <div className={"header__socials"}>
@@ -21,14 +20,6 @@ const HeaderSocial : FunctionComponent =()=>{
         </div>
 
     )
-
-
-
-
-
-
-
-
 
 
 
