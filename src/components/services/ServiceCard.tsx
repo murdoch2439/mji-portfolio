@@ -8,9 +8,7 @@ type props={
 
 const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
     return(
-
-
-            <article >
+            <article>
                 <div>
                     {
 
@@ -26,7 +24,7 @@ const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
                 </div>
 
             </article>
-        
+
     )
 }
 
