@@ -8,12 +8,27 @@ type props={
 
 const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
     return(
-        <article className={"service"}>
-            <div className={"service__head"}>
-                <h3>{title}</h3>
-            </div>
-            {children}
-        </article>
+        <>
+
+            <article >
+                <div>
+                    {
+
+                        isPopular && <div className={`service ${isPopular ? "isPopular" : ""}`}>Most demanded</div>
+                    }
+
+                </div>
+                <div className={"service"}>
+                    <div className={"service__head"}>
+                        <h3>{title}</h3>
+                    </div>
+                    {children}
+                </div>
+
+
+            </article>
+        </>
+
     )
 }
 
