@@ -15,6 +15,22 @@
 }
 
 
+.isPopular{
+    height: 2rem;
+    background: #1393e3;
+    /*border:1px solid var(--color-primary);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem 0.4rem 0 0 ;
+}
+.isPopular:hover{
+    background:transparent;
+    border-color: var(--color-primary-variant);
+    cursor:default;
+}
+
+
 .service:hover{
     background:transparent;
     border-color: var(--color-primary-variant);
