@@ -25,10 +25,8 @@ const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
                     {children}
                 </div>
 
-
             </article>
-
-
+        
     )
 }
 
