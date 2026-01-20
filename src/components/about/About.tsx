@@ -1,16 +1,11 @@
 import React, {FunctionComponent} from 'react';
 import './about.css'
 import AnotherMe from "../../assets/me.png"
-import {FaAward} from "react-icons/fa"
+import {FaAward, } from "react-icons/fa"
 import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
 import AboutCard from "./AboutCard";
 import {useGlobalStore} from "../../store/Context";
-
-
-
-
-
 
 
 const items =[
@@ -36,12 +31,19 @@ const About: FunctionComponent = () => {
 
                 <div className={"about__content"}>
                     <div className={"about__cards"}>
-                        <AboutCard icon={<FaAward className={"about__icon"}/>} title={"Experience"}
-                                   subtitle={"4+ Years"}/>
-                        <AboutCard icon={<FiUsers className={"about__icon"}/>} title={"Clients"}
-                                   subtitle={"10+ Worldwide"}/>
-                        <AboutCard icon={<VscFolderLibrary className={"about__icon"}/>} title={"Projects"}
-                                   subtitle={"100+ Hours"}/>
+                        <AboutCard
+                            icon={<FaAward className={"about__icon"}/>}
+                            title={"Experience"}
+                            subtitle={"4+ Years"}
+                        />
+                        <AboutCard icon={<FiUsers className={"about__icon"}/>}
+                                   title={"Clients"}
+                                   subtitle={"10+ Worldwide"}
+                        />
+                        <AboutCard icon={<VscFolderLibrary className={"about__icon"}/>}
+                                   title={"Projects"}
+                                   subtitle={"100+ Hours"}
+                        />
                     </div>
                     <div>
                         <p className={"about__p"}>
