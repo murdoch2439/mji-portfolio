@@ -1,43 +1,9 @@
-import React, {FunctionComponent} from "react"
+import React, {FunctionComponent, ReactElement} from "react"
 type props={
-    icon: any,
+    icon: ReactElement,
     title:string,
     subtitle:string
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
