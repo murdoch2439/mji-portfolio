@@ -7,7 +7,6 @@ import {VscFolderLibrary} from "react-icons/vsc"
 import AboutCard from "./AboutCard";
 import {useGlobalStore} from "../../store/Context";
 
-
 const items =[
     {id:"1", title:"Private"},
     {id:"2", title:"Public"},
@@ -15,10 +14,12 @@ const items =[
 ]
 
 
+
+
 const About: FunctionComponent = () => {
     const {setActiveSection} = useGlobalStore()
-    return (
 
+    return (
         <section id={"about"}>
             <h5>Get To Know</h5>
             <h2>About Me</h2>
@@ -52,8 +53,7 @@ const About: FunctionComponent = () => {
                         </p>
                         <p className={"about__p"}>
                             My years of experience and works qualify me to help you transform your idea into a finished product.
-                             I've been offering consulting services to small businesses and startups helping them build a strong online brand or achieving their business goals using information technologies <br />
-
+                            I've been offering consulting services to small businesses and startups helping them build a strong online brand or achieving their business goals using information technologies <br />
                         </p>
                     </div>
                     <a href={"#contact"} onClick={() => setActiveSection("#contact")} className={"btn btn-primary"}>
