@@ -6,7 +6,6 @@ type props={
 }
 
 
-
 const AboutCard : FunctionComponent<props> =({icon, title, subtitle})=>{
     return(
         <article className={"about__card"}>
@@ -16,6 +15,7 @@ const AboutCard : FunctionComponent<props> =({icon, title, subtitle})=>{
         </article>
     )
 }
+
 
 
 export default AboutCard
