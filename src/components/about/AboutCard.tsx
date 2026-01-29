@@ -15,5 +15,4 @@ const AboutCard : FunctionComponent<props> =({icon, title, subtitle})=>{
     )
 }
 
-
 export default AboutCard
