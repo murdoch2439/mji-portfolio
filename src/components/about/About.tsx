@@ -13,7 +13,6 @@ const items =[
     {id:"3", title:"Middle"},
 ]
 
-
 const About: FunctionComponent = () => {
     const {setActiveSection} = useGlobalStore()
 
