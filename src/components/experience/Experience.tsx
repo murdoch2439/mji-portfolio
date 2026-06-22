@@ -18,6 +18,7 @@ const Experience : FunctionComponent =()=>{
                    <h3>Frontend</h3>
                    <div className={"experience__content"}>
 
+
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"HTML"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"CSS"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"JavaScript"} experienceLevel={"Experienced"} />

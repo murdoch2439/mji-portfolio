@@ -12,6 +12,7 @@ import granapreme from "../../assets/granapreme.jpeg"
 import fondasi from "../../assets/fondasi.jpeg"
 import Dashboard from "../../assets/Dashboard.png"
 import Reading from "../../assets/Reading.png"
+import Foprix from "../../assets/foprix.png"
 import sr7 from "../../assets/sr7.jpg"
 
 
@@ -28,6 +29,7 @@ import sr7 from "../../assets/sr7.jpg"
 
      {id: "4", title:"sur7.com", cover:sr7, github:"https://github.com", demo:"https://nodaliesse.com", work:["UX Design", "Mobile Development"]},
      {id: "18598", title:"Reading App", cover:Reading,  github:"https://github.com", demo:"https://www.youtube.com/shorts/F8JBZu4c87U", work:["UX Design", "Mobile Development"]},
+     {id: "185980", title:"Foprix", cover:Foprix,  github:"https://github.com", demo:"https://www.foprixdrc.com", work:["Fullstack Development", "Mobile Development"]},
 
      // {id: "6", title:"Branding and UI Design for reservation website", cover:trav, github:"https://github.com", demo:"https://www.figma.com/proto/YmOM40MjivW6XqSIG3uMHk/Trip-planer?node-id=2%3A2&starting-point-node-id=2%3A2&scaling=min-zoom", work:["UX Design",]},
      // {id: "7", title:"Rebranding of grocery eCommerce", cover:grocery,  github:"https://github.com", demo:"https://www.figma.com/proto/TdFNIsIkUMFodv1ktCrJpX/Grocery?node-id=136%3A206&scaling=min-zoom&page-id=136%3A205&starting-point-node-id=136%3A206", work:["UX Design",]},
