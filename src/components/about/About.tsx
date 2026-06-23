@@ -33,7 +33,7 @@ const About: FunctionComponent = () => {
                         <AboutCard
                             icon={<FaAward className={"about__icon"}/>}
                             title={"Experience"}
-                            subtitle={"4+ Years"}
+                            subtitle={"5+ Years"}
                         />
                         <AboutCard icon={<FiUsers className={"about__icon"}/>}
                                    title={"Clients"}
