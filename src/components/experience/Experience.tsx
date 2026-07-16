@@ -22,7 +22,7 @@ const Experience : FunctionComponent =()=>{
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"HTML"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"CSS"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"JavaScript"} experienceLevel={"Experienced"} />
-                       <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Python"} experienceLevel={"Intermediate"} />
+                       {/* <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Python"} experienceLevel={"Intermediate"} /> */}
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Material UI"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"React JS"} experienceLevel={"Experienced"} />
                        <ExperienceItem icon={<BsPatchCheckFill className={"experience__details-icon"} />} title={"Next JS"} experienceLevel={"Experienced"} />
