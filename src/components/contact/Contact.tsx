@@ -90,7 +90,6 @@ const Contact : FunctionComponent =()=>{
                     {/*</article>*/}
 
 
-
                     {
                         options.map((item, index)=>{
                             return(<ContactOption key={index} item={item} />)
