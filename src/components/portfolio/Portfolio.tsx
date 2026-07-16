@@ -14,6 +14,7 @@ import Dashboard from "../../assets/Dashboard.png"
 import Reading from "../../assets/Reading.png"
 import Foprix from "../../assets/foprix.png"
 import FondationRegine from "../../assets/fondationregine.png"
+import Cchi from "../../assets/cchi.png"
 import sr7 from "../../assets/sr7.jpg"
 import contactApp from "../../assets/contactApp.png"
 
@@ -32,8 +33,9 @@ import contactApp from "../../assets/contactApp.png"
      {id: "4", title:"sur7.com", cover:sr7, github:"https://github.com", demo:"https://nodaliesse.com", work:["UX Design", "Mobile Development"]},
      {id: "18598", title:"Reading App", cover:Reading,  github:"https://github.com", demo:"https://www.youtube.com/shorts/F8JBZu4c87U", work:["UX Design", "Mobile Development"]},
      {id: "185980", title:"Foprix DRC", cover:Foprix,  github:"https://github.com", demo:"https://www.foprixdrc.com", work:["Web Design", "Mobile Development"]},
-     {id: "1859800", title:"Fondation Regine", cover:FondationRegine,  github:"https://github.com", demo:"https://www.fondationregine.com", work:["Web Design", "Mobile Development"]},
+     {id: "1859800", title:"Fondation Regine", cover:FondationRegine,  github:"https://github.com", demo:"https://www.fondationreginelukadi.org", work:["Web Design", "Mobile Development"]},
      {id: "18598000", title:"Contacts Manager", cover:contactApp,  github:"https://github.com/murdoch2439/online-attendance-manager", demo:"https://www.fondationregine.com", work:["Desktop Development"]},
+     {id: "185980000", title:"CC Hope Initiative", cover:Cchi,  github:"https://github.com/", demo:"https://www.congochildrenshopeinitiative.org", work:["Web Development", "Content Writing"]},
 
 
      // {id: "6", title:"Branding and UI Design for reservation website", cover:trav, github:"https://github.com", demo:"https://www.figma.com/proto/YmOM40MjivW6XqSIG3uMHk/Trip-planer?node-id=2%3A2&starting-point-node-id=2%3A2&scaling=min-zoom", work:["UX Design",]},
