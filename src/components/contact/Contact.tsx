@@ -28,7 +28,7 @@ const options=[
     {
         id:'3',
         title:"WhatsApp",
-        subTitle:"+243 818 081 758",
+        subTitle:"+243 808 495 537",
         action:"https://api.whatsapp.com/send?phone=+243818081758",
         icon:<BsWhatsapp className={"contact__option-icon"} />,
         actionTitle:"Send a message"
