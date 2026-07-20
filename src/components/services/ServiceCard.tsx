@@ -14,7 +14,6 @@ const ServiceCard : FunctionComponent<props> =({children, title, isPopular})=>{
 
                         isPopular && <div className={`service ${isPopular ? "isPopular" : ""}`}>Most demanded</div>
                     }
-
                 </div>
                 <div className={"service"}>
                     <div className={"service__head"}>

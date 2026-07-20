@@ -1,7 +1,6 @@
 import React, {FunctionComponent, ReactNode, useEffect, useRef} from "react"
 import {useGlobalStore} from "../../store/Context";
 
-
 type props={
     children: ReactNode;
     id:string
@@ -11,7 +10,6 @@ const SectionComponent : FunctionComponent<props> =({children, id})=> {
     const {setActiveSection} = useGlobalStore()
     const sectionRef = useRef(null);
     const timeoutRef:any= useRef(null);
-
 
     useEffect(() => {
         const observerOptions = {
@@ -44,7 +42,6 @@ const SectionComponent : FunctionComponent<props> =({children, id})=> {
             clearTimeout(timeoutRef.current);
         };
     }, [id, setActiveSection]);
-
 
 
     return (
