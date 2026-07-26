@@ -17,6 +17,7 @@ import FondationRegine from "../../assets/fondationregine.png"
 import Cchi from "../../assets/cchi.png"
 import Worklog from "../../assets/worklog.png"
 import sr7 from "../../assets/sr7.jpg"
+import Ligite from "../../assets/ligite.png"
 import contactApp from "../../assets/contactApp.png"
 
 
@@ -38,6 +39,7 @@ import contactApp from "../../assets/contactApp.png"
      {id: "18598000", title:"Contacts Manager", cover:contactApp,  github:"https://github.com/murdoch2439/online-attendance-manager", demo:"https://www.fondationregine.com", work:["Desktop Development"]},
      {id: "185980000", title:"CC Hope Initiative", cover:Cchi,  github:"https://github.com/", demo:"https://www.congochildrenshopeinitiative.org", work:["Web Development", "Content Writing"]},
      {id: "1859800000", title:"Worklog Tracker", cover:Worklog,  github:"https://github.com/", demo:"https://www.bmpcworklogtracker.com/", work:["WebApp Development",]},
+     {id: "18598000000", title:"Ligite", cover:Ligite,  github:"https://github.com/", demo:"https://www.ligite.com/", work:["WebApp Development",]},
 
      // {id: "6", title:"Branding and UI Design for reservation website", cover:trav, github:"https://github.com", demo:"https://www.figma.com/proto/YmOM40MjivW6XqSIG3uMHk/Trip-planer?node-id=2%3A2&starting-point-node-id=2%3A2&scaling=min-zoom", work:["UX Design",]},
      // {id: "7", title:"Rebranding of grocery eCommerce", cover:grocery,  github:"https://github.com", demo:"https://www.figma.com/proto/TdFNIsIkUMFodv1ktCrJpX/Grocery?node-id=136%3A206&scaling=min-zoom&page-id=136%3A205&starting-point-node-id=136%3A206", work:["UX Design",]},
