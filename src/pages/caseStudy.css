@@ -9,6 +9,74 @@
   text-align: center;
 }
 
+/* Shared rail: same .container width/margins as home content */
+.case-study__chrome {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  z-index: 2;
+  pointer-events: none;
+  margin: 0;
+}
+
+/* Bottom-left: aligns with container left edge (home socials) */
+.case-study__float-back {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  color: var(--color-light);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.case-study__float-back svg {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.case-study__float-back:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Bottom-right: same rotated text language as hero "Scroll Down" */
+.case-study__scroll-up {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 6.5rem;
+  pointer-events: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 400ms ease, color 400ms ease;
+}
+
+.case-study__scroll-up--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.case-study__scroll-up:hover {
+  color: var(--color-white);
+}
+
 .case-study__hero {
   padding: 5rem 0 2rem;
   background: linear-gradient(
@@ -294,5 +362,17 @@
 
   .case-study__cta {
     padding: 1.75rem 1.25rem;
+  }
+
+  .case-study__float-back {
+    bottom: 1.25rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .case-study__scroll-up {
+    right: 0;
+    bottom: 5.5rem;
+    font-size: 0.8rem;
   }
 }

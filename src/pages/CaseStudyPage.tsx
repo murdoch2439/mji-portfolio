@@ -1,7 +1,61 @@
-import React, { FunctionComponent, useEffect } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { HiOutlineArrowLeft } from "react-icons/hi";
 import { getCaseStudyBySlug } from "../data/caseStudies";
 import "./caseStudy.css";
+
+const CaseStudyBackControl: FunctionComponent = () => (
+  <Link
+    to="/#portfolio"
+    className="case-study__float-back"
+    aria-label="Back to portfolio"
+  >
+    <HiOutlineArrowLeft aria-hidden />
+    <span>Portfolio</span>
+  </Link>
+);
+
+const CaseStudyScrollTop: FunctionComponent<{ visible: boolean }> = ({
+  visible,
+}) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <button
+      type="button"
+      className={`case-study__scroll-up${
+        visible ? " case-study__scroll-up--visible" : ""
+      }`}
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      tabIndex={visible ? 0 : -1}
+    >
+      Scroll Up
+    </button>
+  );
+};
+
+const CaseStudyChrome: FunctionComponent = () => {
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowScrollUp(window.scrollY > 320);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <div className="container case-study__chrome">
+      <CaseStudyBackControl />
+      <CaseStudyScrollTop visible={showScrollUp} />
+    </div>
+  );
+};
 
 const CaseStudyPage: FunctionComponent = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -23,6 +77,7 @@ const CaseStudyPage: FunctionComponent = () => {
             Back to portfolio
           </Link>
         </div>
+        <CaseStudyChrome />
       </main>
     );
   }
@@ -197,6 +252,8 @@ const CaseStudyPage: FunctionComponent = () => {
           </Link>
         </div>
       </section>
+
+      <CaseStudyChrome />
     </main>
   );
 };
