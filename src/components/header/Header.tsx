@@ -43,7 +43,7 @@ const Header : FunctionComponent =()=>{
                    {/*</div>*/}
                    <img src={Profile} alt={"a profile of murdoch"} />
                </div>
-               <a href={"#contact"} onClick={()=>setActiveSection("#contact")} className={"scroll__down"}>Scroll Down</a>
+               <a href={"#contact"} onClick={()=>setActiveSection("contact")} className={"scroll__down"}>Scroll Down</a>
            </div>
        </header>
     )
