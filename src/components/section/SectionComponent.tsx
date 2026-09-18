@@ -1,63 +1,23 @@
-import React, {FunctionComponent, ReactNode, useEffect, useRef} from "react"
-import {useGlobalStore} from "../../store/Context";
+import React, { FunctionComponent, ReactNode } from "react";
 
-type props={
-    children: ReactNode;
-    id:string
-}
+type Props = {
+  children: ReactNode;
+  id: string;
+};
 
-const SectionComponent : FunctionComponent<props> =({children, id})=> {
-    const {setActiveSection} = useGlobalStore()
-    const sectionRef = useRef(null);
-    const timeoutRef:any= useRef(null);
+/**
+ * Marks a page region for hash links and adaptive scroll-spy.
+ * Active section detection lives in useScrollSpy (not per-section observers),
+ * so behaviour stays correct regardless of section height.
+ */
+const SectionComponent: FunctionComponent<Props> = ({ children, id }) => {
+  const scrollAttrs = { id, "data-scroll-section": id };
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5,
-        };
+  if (id === "") {
+    return <div {...scrollAttrs}>{children}</div>;
+  }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    clearTimeout(timeoutRef.current);
+  return <section {...scrollAttrs}>{children}</section>;
+};
 
-                    timeoutRef.current = setTimeout(() => {
-                        setActiveSection(id);
-                    }, 50);
-                    // setActiveSection(id);
-                }
-            });
-        }, observerOptions);
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-            clearTimeout(timeoutRef.current);
-        };
-    }, [id, setActiveSection]);
-
-
-    return (
-        <>
-            {
-                id === "" ?
-                    <div id={id} ref={sectionRef}>
-                        {children}
-                    </div> :
-                    <section id={id} ref={sectionRef}>
-                        {children}
-                    </section>
-            }
-        </>
-
-)
-}
-
-export default SectionComponent
+export default SectionComponent;

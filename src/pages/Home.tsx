@@ -10,8 +10,14 @@ import Footer from "../components/footer/Footer";
 import About from "../components/about/About";
 import FooterSm from "../components/footerSm/FooterSm";
 import SectionComponent from "../components/section/SectionComponent";
+import {
+  HOME_SCROLL_SECTION_IDS,
+  useScrollSpy,
+} from "../hooks/useScrollSpy";
 
 const Home: FunctionComponent = () => {
+  useScrollSpy(HOME_SCROLL_SECTION_IDS);
+
   return (
     <>
       <SectionComponent id={""}>

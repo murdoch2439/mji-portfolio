@@ -30,7 +30,7 @@ type Props={
 
 export const GlobalStore:FunctionComponent<Props> =({children})=>{
     const [loading, setLoading] = useState<boolean>(false)
-    const [activeSection, setActiveSection] = useState<string>("#")
+    const [activeSection, setActiveSection] = useState<string>("")
     const values={loading, setLoading, activeSection, setActiveSection}
 
     return(
