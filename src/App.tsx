@@ -1,50 +1,47 @@
-import React from 'react';
-import './App.css';
-import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
-import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
-import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import About from "./components/about/About";
-import FooterSm from "./components/footerSm/FooterSm";
-import { GlobalStore} from './store/Context';
-import SectionComponent from "./components/section/SectionComponent";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import "./App.css";
+import { GlobalStore } from "./store/Context";
+import Home from "./pages/Home";
+import CaseStudyPage from "./pages/CaseStudyPage";
 
+/** Scroll to hash targets when navigating to /#section from case studies */
+const HashScrollHandler = () => {
+  const location = useLocation();
 
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      // Wait a tick so Home has mounted
+      requestAnimationFrame(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    } else if (location.pathname === "/") {
+      // no-op: keep existing section scroll from nav
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
+
+  return null;
+};
 
 function App() {
-
   return (
-      <>
-        <GlobalStore>
-          <div className="App">
-            <SectionComponent  id={''}><Header /></SectionComponent>
-
-            <Nav />
-
-              <SectionComponent  id={'about'}><About /></SectionComponent>
-              <SectionComponent  id={'experience'}><Experience /></SectionComponent>
-              <SectionComponent  id={'services'}><Services /></SectionComponent>
-              <SectionComponent  id={'portfolio'}><Portfolio /></SectionComponent>
-              <SectionComponent  id={'testimonials'}><Testimonials /></SectionComponent>
-              <SectionComponent  id={'contact'}><Contact /></SectionComponent>
-              <Footer />
-              <FooterSm />
-
-
-
-            {/*<About />*/}
-            {/*<Experience />*/}
-            {/*<Services />*/}
-            {/*<Portfolio />*/}
-            {/*<Testimonials />*/}
-
-          </div>
-        </GlobalStore>
-      </>
+    <BrowserRouter>
+      <GlobalStore>
+        <div className="App">
+          <HashScrollHandler />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/:slug" element={<CaseStudyPage />} />
+          </Routes>
+        </div>
+      </GlobalStore>
+    </BrowserRouter>
   );
 }
 
