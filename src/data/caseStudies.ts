@@ -163,7 +163,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Desktop Development", "CRUD Systems", "UX"],
     meta: {
       role: "Designer & Desktop App Developer",
-      timeline: "6 weeks · 2024",
+      timeline: "6 weeks · 2026",
       team: "Solo product ownership",
       stack: ["Electron / Desktop UI", "Local storage / DB", "TypeScript"],
     },
