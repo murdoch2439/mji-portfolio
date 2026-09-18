@@ -1,27 +1,35 @@
-import React, {FunctionComponent} from "react"
+import React, { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 import TagList from "../tags/TagList";
+import { PortfolioProject } from "../../data/portfolioProjects";
 
-type props={
-    item:any
-}
+type Props = {
+  item: PortfolioProject;
+};
 
+const PortfolioItem: FunctionComponent<Props> = ({ item }) => {
+  const { cover, href, work, title, linkType } = item;
 
-const PortfolioItem : FunctionComponent<props> =({item})=>{
-    const {cover, demo, work} = item
-    return(
-        <article className={"portfolio__item"}>
-            <div className={"portfolio__item-image"}>
-                <img src={cover} alt={""} className={"portfolio__image"} />
-            </div>
+  return (
+    <article className={"portfolio__item"}>
+      <div className={"portfolio__item-image"}>
+        <img src={cover} alt={title} className={"portfolio__image"} />
+      </div>
 
-            <TagList  items={work}/>
-            <div className={"portfolio__item-cta"}>
-                <a href={demo} className={"btn"} target={"__blank"}>See project</a>
-            </div>
-        </article>
-    )
-}
+      <TagList items={work} />
+      <div className={"portfolio__item-cta"}>
+        {linkType === "caseStudy" ? (
+          <Link to={href} className={"btn"}>
+            See project
+          </Link>
+        ) : (
+          <a href={href} className={"btn"} target={"_blank"} rel="noreferrer">
+            See project
+          </a>
+        )}
+      </div>
+    </article>
+  );
+};
 
-
-
-export default PortfolioItem
+export default PortfolioItem;
