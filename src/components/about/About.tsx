@@ -54,7 +54,7 @@ const About: FunctionComponent = () => {
                             I've been offering consulting services to small businesses and startups helping them build a strong online brand or achieving their business goals using information technologies <br />
                         </p>
                     </div>
-                    <a href={"#contact"} onClick={() => setActiveSection("#contact")} className={"btn btn-primary"}>
+                    <a href={"#contact"} onClick={() => setActiveSection("contact")} className={"btn btn-primary"}>
                         Let's talk
                     </a>
                 </div>
