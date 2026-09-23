@@ -6,7 +6,7 @@ import "./caseStudy.css";
 
 const CaseStudyBackControl: FunctionComponent = () => (
   <Link
-    to="/#portfolio"
+    to="/portfolio"
     className="case-study__float-back"
     aria-label="Back to portfolio"
   >
@@ -73,7 +73,7 @@ const CaseStudyPage: FunctionComponent = () => {
           <p className="text-light">
             This case study does not exist or was moved.
           </p>
-          <Link to="/#portfolio" className="btn btn-primary">
+          <Link to="/portfolio" className="btn btn-primary">
             Back to portfolio
           </Link>
         </div>
@@ -86,7 +86,7 @@ const CaseStudyPage: FunctionComponent = () => {
     <main className="case-study">
       <header className="case-study__hero">
         <div className="container case-study__hero-inner">
-          <Link to="/#portfolio" className="case-study__back">
+          <Link to="/portfolio" className="case-study__back">
             ← Back to portfolio
           </Link>
           <p className="case-study__eyebrow">Case study</p>
@@ -247,7 +247,7 @@ const CaseStudyPage: FunctionComponent = () => {
           <Link to="/#contact" className="btn btn-primary">
             Get in touch
           </Link>
-          <Link to="/#portfolio" className="btn">
+          <Link to="/portfolio" className="btn">
             More projects
           </Link>
         </div>
