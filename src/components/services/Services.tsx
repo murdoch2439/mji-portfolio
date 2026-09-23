@@ -23,10 +23,12 @@ const WEB_DEVELOPMENT=[
 
 
 
-const CONTENT_CREATION=[
-    "Website",
-    "Blog articles",
-    "Newsletter"
+const PROJECT_MANAGEMENT=[
+    "Remote team workflows",
+    "Task & worklog tracking",
+    "Agile facilitation",
+    "Reporting & metrics",
+    "Tooling (Jira & custom)",
 ]
 
 
@@ -51,8 +53,8 @@ const Services : FunctionComponent =()=>{
 
                 </ServiceCard>
 
-                <ServiceCard title={"Content writing"} >
-                    <ServiceCardListItem items={CONTENT_CREATION} />
+                <ServiceCard title={"Project Management"} >
+                    <ServiceCardListItem items={PROJECT_MANAGEMENT} />
 
                 </ServiceCard>
             </div>

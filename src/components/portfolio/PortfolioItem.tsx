@@ -17,6 +17,7 @@ const PortfolioItem: FunctionComponent<Props> = ({ item }) => {
       </div>
 
       <TagList items={work} />
+      <h3 className={"portfolio__item-title"}>{title}</h3>
       <div className={"portfolio__item-cta"}>
         {linkType === "caseStudy" ? (
           <Link to={href} className={"btn"}>
