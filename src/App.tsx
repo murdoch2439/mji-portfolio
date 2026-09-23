@@ -4,6 +4,7 @@ import "./App.css";
 import { GlobalStore } from "./store/Context";
 import Home from "./pages/Home";
 import CaseStudyPage from "./pages/CaseStudyPage";
+import PortfolioPage from "./pages/PortfolioPage";
 
 /** Scroll to hash targets when navigating to /#section from case studies */
 const HashScrollHandler = () => {
@@ -37,6 +38,7 @@ function App() {
           <HashScrollHandler />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/projects/:slug" element={<CaseStudyPage />} />
           </Routes>
         </div>

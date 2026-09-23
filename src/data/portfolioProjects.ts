@@ -31,8 +31,65 @@ export type PortfolioProject = {
   href: string;
 };
 
-export const portfolioProjects: PortfolioProject[] = [
+/** How many projects appear in the home "My Recent Work" section */
+export const RECENT_PORTFOLIO_COUNT = 6;
 
+/**
+ * Ordered newest-first. The home page shows the first RECENT_PORTFOLIO_COUNT;
+ * /portfolio lists the full array.
+ */
+export const portfolioProjects: PortfolioProject[] = [
+  {
+    id: "hymnvault",
+    title: "HymnVault",
+    cover: HymnVault,
+    href: "/projects/hymnvault",
+    linkType: "caseStudy",
+    work: ["WebApp Development"],
+  },
+  {
+    id: "hymner",
+    title: "Hymner",
+    cover: Hymner,
+    href: "/projects/hymner",
+    linkType: "caseStudy",
+    work: ["Mobile Development", "Offline-first"],
+  },
+  {
+    id: "kwozing",
+    title: "Kwozing",
+    cover: Kwozing,
+    href: "https://kwozing.vercel.app/",
+    linkType: "external",
+    work: ["Web Design", "Web Development"],
+  },
+  {
+    id: "kwozing-app",
+    title: "Kwozing Desktop",
+    cover: contactApp,
+    github: "https://github.com/murdoch2439/online-attendance-manager",
+    href: "/projects/kwozing-app",
+    linkType: "caseStudy",
+    work: ["Desktop Development"],
+  },
+  {
+    id: "1859800000",
+    title: "Worklog Tracker",
+    cover: Worklog,
+    github: "https://github.com/",
+    href: "/projects/worklog-tracker",
+    linkType: "caseStudy",
+    work: ["WebApp Development", "Jira Integration"],
+  },
+  {
+    id: "18598000000",
+    title: "Ligite",
+    cover: Ligite,
+    github: "https://github.com/",
+    href: "https://www.ligite.com/",
+    linkType: "external",
+    work: ["WebApp Development"],
+  },
   {
     id: "1",
     title: "i7 Comms",
@@ -124,14 +181,6 @@ export const portfolioProjects: PortfolioProject[] = [
     work: ["Web Design", "Mobile Development"],
   },
   {
-    id: "hymnvault",
-    title: "HymnVault",
-    cover: HymnVault,
-    href: "/projects/hymnvault",
-    linkType: "caseStudy",
-    work: ["WebApp Development"],
-  },
-  {
     id: "1859800",
     title: "Fondation Regine",
     cover: FondationRegine,
@@ -139,14 +188,6 @@ export const portfolioProjects: PortfolioProject[] = [
     href: "https://www.fondationreginelukadi.org",
     linkType: "external",
     work: ["Web Design", "Mobile Development"],
-  },
-  {
-    id: "kwozing",
-    title: "Kwozing",
-    cover: Kwozing,
-    href: "https://kwozing.vercel.app/",
-    linkType: "external",
-    work: ["Web Design", "Web Development"],
   },
   {
     id: "185980000",
@@ -157,39 +198,9 @@ export const portfolioProjects: PortfolioProject[] = [
     linkType: "external",
     work: ["Web Development", "Content Writing"],
   },
-  {
-    id: "1859800000",
-    title: "Worklog Tracker",
-    cover: Worklog,
-    github: "https://github.com/",
-    href: "/projects/worklog-tracker",
-    linkType: "caseStudy",
-    work: ["WebApp Development", "Jira Integration"],
-  },
-  {
-    id: "kwozing-app",
-    title: "Kwozing Desktop",
-    cover: contactApp,
-    github: "https://github.com/murdoch2439/online-attendance-manager",
-    href: "/projects/kwozing-app",
-    linkType: "caseStudy",
-    work: ["Desktop Development"],
-  },
-  {
-    id: "18598000000",
-    title: "Ligite",
-    cover: Ligite,
-    github: "https://github.com/",
-    href: "https://www.ligite.com/",
-    linkType: "external",
-    work: ["WebApp Development"],
-  },
-  {
-    id: "hymner",
-    title: "Hymner",
-    cover: Hymner,
-    href: "/projects/hymner",
-    linkType: "caseStudy",
-    work: ["Mobile Development", "Offline-first"],
-  },
 ];
+
+export const recentPortfolioProjects = portfolioProjects.slice(
+  0,
+  RECENT_PORTFOLIO_COUNT
+);
