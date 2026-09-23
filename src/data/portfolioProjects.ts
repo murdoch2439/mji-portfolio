@@ -13,6 +13,9 @@ import Worklog from "../assets/worklog.png";
 import sr7 from "../assets/sr7.jpg";
 import Ligite from "../assets/ligite.png";
 import contactApp from "../assets/contactApp.png";
+import Kwozing from "../assets/kwozing.png";
+import HymnVault from "../assets/hymnvault-2.png";
+import Hymner from "../assets/hymner.png";
 
 export type PortfolioLinkType = "external" | "caseStudy";
 
@@ -29,9 +32,10 @@ export type PortfolioProject = {
 };
 
 export const portfolioProjects: PortfolioProject[] = [
+
   {
     id: "1",
-    title: "i7Sms",
+    title: "i7 Comms",
     cover: Dashboard,
     github: "https://github.com",
     href: "https://www.figma.com/proto/qiROfr8pDxH25EhZbhFFzj/i7sms?node-id=123-444&p=f&t=pVdPFamW2UW5TEVu-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
@@ -67,7 +71,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "4",
-    title: "Orphelinat notre dame de liesse",
+    title: "Orphelinat Nodaliesse",
     cover: noda,
     github: "https://github.com",
     href: "https://nodaliesse.com",
@@ -76,7 +80,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "8",
-    title: "Fullstack development & copy writing",
+    title: "Diginco",
     cover: dic,
     github: "https://github.com",
     href: "https://www.figma.com/proto/HdJ0apbneCIFEcho2SRUNx/Digital-invest-corporate?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&node-id=1%3A2&hide-ui=1",
@@ -94,7 +98,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "4b",
-    title: "sur7.com",
+    title: "7sur7.com",
     cover: sr7,
     github: "https://github.com",
     href: "https://nodaliesse.com",
@@ -120,6 +124,14 @@ export const portfolioProjects: PortfolioProject[] = [
     work: ["Web Design", "Mobile Development"],
   },
   {
+    id: "hymnvault",
+    title: "HymnVault",
+    cover: HymnVault,
+    href: "/projects/hymnvault",
+    linkType: "caseStudy",
+    work: ["WebApp Development"],
+  },
+  {
     id: "1859800",
     title: "Fondation Regine",
     cover: FondationRegine,
@@ -129,13 +141,12 @@ export const portfolioProjects: PortfolioProject[] = [
     work: ["Web Design", "Mobile Development"],
   },
   {
-    id: "18598000",
-    title: "Contacts Manager",
-    cover: contactApp,
-    github: "https://github.com/murdoch2439/online-attendance-manager",
-    href: "/projects/contacts-manager",
-    linkType: "caseStudy",
-    work: ["Desktop Development"],
+    id: "kwozing",
+    title: "Kwozing",
+    cover: Kwozing,
+    href: "https://kwozing.vercel.app/",
+    linkType: "external",
+    work: ["Web Design", "Web Development"],
   },
   {
     id: "185980000",
@@ -156,6 +167,15 @@ export const portfolioProjects: PortfolioProject[] = [
     work: ["WebApp Development", "Jira Integration"],
   },
   {
+    id: "kwozing-app",
+    title: "Kwozing Desktop",
+    cover: contactApp,
+    github: "https://github.com/murdoch2439/online-attendance-manager",
+    href: "/projects/kwozing-app",
+    linkType: "caseStudy",
+    work: ["Desktop Development"],
+  },
+  {
     id: "18598000000",
     title: "Ligite",
     cover: Ligite,
@@ -163,5 +183,13 @@ export const portfolioProjects: PortfolioProject[] = [
     href: "https://www.ligite.com/",
     linkType: "external",
     work: ["WebApp Development"],
+  },
+  {
+    id: "hymner",
+    title: "Hymner",
+    cover: Hymner,
+    href: "/projects/hymner",
+    linkType: "caseStudy",
+    work: ["Mobile Development", "Offline-first"],
   },
 ];
