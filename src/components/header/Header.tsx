@@ -20,16 +20,16 @@ const Header : FunctionComponent =()=>{
                {/*<div className={"switch"}>*/}
                {/*    <Switch rounded={true} isToggled={isToggled} onToggle={()=>setIsToggled(!isToggled)} />*/}
                {/*</div>*/}
-               <h2>Welcome on Mji Website</h2>
-               <h1 className={"header_title_one"}>Personal Portfolio</h1>
+               <h2>Hello, I'm glad to have you here</h2>
+               <h1 className={"header_title_one"}>Welcome to my space</h1>
                <div className={"services_tag"} >
                    <h5 className={"text-light"}>UI/UX Design</h5>
                    <h5 className={"text-light separator"}> | </h5>
                    <h5 className={"text-light"}>Fullstack Development</h5>
                    <h5 className={"text-light separator"}> | </h5>
-                   <h5 className={"text-light"}>Content writing</h5>
+                   <h5 className={"text-light"}>Project Management</h5>
                </div>
-               <h4 className={"intro"} >I can help you build a digital product, automate your business process, create your website or add a new feature to boost and growth and online visibility. But first...</h4>
+               <h4 className={"intro"} >Together we can deliver your digital project from start to finish, you just need to tell me what you want so we can analyze and plan everything step by step. But first...</h4>
 
                <CTA />
 
