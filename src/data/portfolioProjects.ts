@@ -16,6 +16,7 @@ import contactApp from "../assets/contactApp.png";
 import Kwozing from "../assets/kwozing.png";
 import HymnVault from "../assets/hymnvault-2.png";
 import Hymner from "../assets/hymner.png";
+import Kolambapp from "../assets/kolambapp.png";
 
 export type PortfolioLinkType = "external" | "caseStudy";
 
@@ -39,6 +40,14 @@ export const RECENT_PORTFOLIO_COUNT = 6;
  * /portfolio lists the full array.
  */
 export const portfolioProjects: PortfolioProject[] = [
+  {
+    id: "kolambapp",
+    title: "Kolambapp",
+    cover: Kolambapp,
+    href: "/projects/kolambapp",
+    linkType: "caseStudy",
+    work: ["WebApp Development", "UX Design"],
+  },
   {
     id: "hymnvault",
     title: "HymnVault",
@@ -155,7 +164,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "4b",
-    title: "7sur7.com",
+    title: "7sur7 Mobile App",
     cover: sr7,
     github: "https://github.com",
     href: "https://nodaliesse.com",

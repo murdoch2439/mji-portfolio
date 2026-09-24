@@ -2,6 +2,7 @@ import Worklog from "../assets/worklog.png";
 import contactApp from "../assets/contactApp.png";
 import HymnVault from "../assets/hymnvault-2.png";
 import Hymner from "../assets/hymner.png";
+import Kolambapp from "../assets/kolambapp.png";
 
 export type CaseStudy = {
   slug: string;
@@ -41,6 +42,111 @@ export type CaseStudy = {
 };
 
 export const caseStudies: CaseStudy[] = [
+  {
+    slug: "kolambapp",
+    title: "Kolambapp",
+    subtitle:
+      "A Congolese cooking web app that teaches cuisine through an immersive, step-by-step experience — from ingredients to the plate.",
+    cover: Kolambapp,
+    liveUrl: "https://kolambapp.vercel.app",
+    tags: ["WebApp Development", "UX Design", "EdTech"],
+    meta: {
+      role: "Product & Fullstack Developer",
+      timeline: "Immersive cooking experience",
+      team: "Built for learners discovering Congolese cuisine",
+      stack: ["Web application", "Guided recipes", "Ingredient knowledge"],
+    },
+    overview:
+      "Kolambapp (Kolamba) is a Congolese web app built around cooking with an immersive learning experience. It does not treat recipes as a list of steps alone. The product starts before the pot: where ingredients come from, how to choose them, what to substitute, then guides the cook through classic dishes such as poulet à la moambe, pondu, and liboke de poisson — one clear stage at a time.",
+    problem: {
+      summary:
+        "People who want to cook Congolese food often meet recipes that assume too much: unnamed techniques, ingredients without context, and no sense of why a dish works. That makes learning feel like copying instead of understanding.",
+      challenges: [
+        "Written recipes rarely explain the ingredients behind Congolese staples.",
+        "Learners needed guidance that felt immersive, not like a dense blog post.",
+        "Substitutions and sourcing matter as much as the cooking steps themselves.",
+        "Classic dishes deserved a digital home that respects the culture and the kitchen pace.",
+      ],
+    },
+    goals: [
+      "Teach Congolese cooking through a guided, step-by-step web experience.",
+      "Help people understand ingredients — origin, choice, and substitutes — before they cook.",
+      "Present iconic recipes in a calm, immersive flow that is easy to follow.",
+      "Keep the product approachable for both curious beginners and home cooks.",
+    ],
+    process: {
+      phases: [
+        {
+          title: "Start before the pot",
+          description:
+            "Framed cooking as understanding food first: ingredients, techniques, and advice — then the recipe. That shape became the product’s spine.",
+        },
+        {
+          title: "Immersive recipe flow",
+          description:
+            "Designed a guided path through each dish so the cook can move stage by stage without losing the thread of the meal.",
+        },
+        {
+          title: "Congolese dish library",
+          description:
+            "Anchored the experience in real staples — moambe, pondu, liboke — with time, difficulty, and servings so people can pick what fits their kitchen.",
+        },
+        {
+          title: "Ship the web experience",
+          description:
+            "Built and published the app so learners can open it in the browser and follow along while they cook.",
+        },
+      ],
+    },
+    solution: {
+      summary:
+        "Kolambapp is an immersive Congolese cooking web app: explore ingredients and techniques, then cook with a step-by-step guide that stays with you through the dish.",
+      features: [
+        {
+          title: "Understand the food",
+          description:
+            "Learn where ingredients come from, how to choose them, and what can replace them before the cooking starts.",
+        },
+        {
+          title: "Step-by-step cooking",
+          description:
+            "Pick a recipe and follow a guided flow designed to stay clear while you are at the stove.",
+        },
+        {
+          title: "Learn as you go",
+          description:
+            "Techniques, tips, and kitchen knowledge sit beside the recipes so cooking builds understanding, not only muscle memory.",
+        },
+        {
+          title: "Congolese staples",
+          description:
+            "Dishes such as poulet à la moambe, pondu, and liboke de poisson with practical details like time, level, and servings.",
+        },
+      ],
+    },
+    outcomes: {
+      summary:
+        "The live product is available on the web for anyone learning Congolese cuisine through a guided experience.",
+      metrics: [
+        { label: "Focus", value: "Congolese cuisine" },
+        { label: "Format", value: "Immersive web app" },
+        { label: "Learning", value: "Ingredients → recipe" },
+        { label: "Live", value: "kolambapp.vercel.app" },
+      ],
+    },
+    reflection: {
+      learned: [
+        "Immersion works when the product respects kitchen time — fewer walls of text, more clear stages.",
+        "Teaching ingredients first makes Congolese recipes less mysterious for people cooking them for the first time.",
+        "Culture-rich food products need accuracy and warmth; the tone of the guide matters as much as the UI.",
+      ],
+      next: [
+        "Grow the recipe library with more regional Congolese dishes.",
+        "Deepen ingredient pages and substitutions for cooks outside the DRC.",
+        "Explore offline or printable guides for kitchens with weak connectivity.",
+      ],
+    },
+  },
   {
     slug: "hymnvault",
     title: "HymnVault",
