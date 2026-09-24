@@ -46,12 +46,12 @@ const About: FunctionComponent = () => {
                     </div>
                     <div>
                         <p className={"about__p"}>
-                            Whether you are looking for a website, web app or mobile app, you landed at the right place to get your problem solved and get result.
-                            From design to technical implementation, I'm able to deliver any project with a well structured work process.
+                            I partner with businesses to solve real operational and growth challenges, not to push a stack or ship a template.
+                            Whether the outcome is a website, a web product, or a mobile experience, I start from the problem, the users, and the constraints, then design and build a solution that fits how your organisation actually works.
                         </p>
                         <p className={"about__p"}>
-                            My years of experience and works qualify me to help you transform your idea into a finished product.
-                            I've been offering consulting services to small businesses and startups helping them build a strong online brand or achieving their business goals using information technologies <br />
+                            Over years of consulting with startups and established teams, I have delivered end-to-end: discovery, UX, implementation, and refinement with a clear process and an eye on performance, maintainability, and customization.
+                            The tools are secondary. What matters is a product that removes friction, supports your goals, and can evolve with the business.
                         </p>
                     </div>
                     <a href={"#contact"} onClick={() => setActiveSection("contact")} className={"btn btn-primary"}>
