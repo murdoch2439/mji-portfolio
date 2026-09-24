@@ -1,12 +1,18 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { getCaseStudyBySlug } from "../data/caseStudies";
+import {
+  portfolioPathForOrigin,
+  readPortfolioOrigin,
+} from "../utils/portfolioNavigation";
 import "./caseStudy.css";
 
-const CaseStudyBackControl: FunctionComponent = () => (
+const CaseStudyBackControl: FunctionComponent<{ backTo: string }> = ({
+  backTo,
+}) => (
   <Link
-    to="/portfolio"
+    to={backTo}
     className="case-study__float-back"
     aria-label="Back to portfolio"
   >
@@ -37,7 +43,7 @@ const CaseStudyScrollTop: FunctionComponent<{ visible: boolean }> = ({
   );
 };
 
-const CaseStudyChrome: FunctionComponent = () => {
+const CaseStudyChrome: FunctionComponent<{ backTo: string }> = ({ backTo }) => {
   const [showScrollUp, setShowScrollUp] = useState(false);
 
   useEffect(() => {
@@ -51,7 +57,7 @@ const CaseStudyChrome: FunctionComponent = () => {
 
   return (
     <div className="container case-study__chrome">
-      <CaseStudyBackControl />
+      <CaseStudyBackControl backTo={backTo} />
       <CaseStudyScrollTop visible={showScrollUp} />
     </div>
   );
@@ -59,7 +65,9 @@ const CaseStudyChrome: FunctionComponent = () => {
 
 const CaseStudyPage: FunctionComponent = () => {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
   const study = slug ? getCaseStudyBySlug(slug) : undefined;
+  const backTo = portfolioPathForOrigin(readPortfolioOrigin(location.state));
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -73,11 +81,11 @@ const CaseStudyPage: FunctionComponent = () => {
           <p className="text-light">
             This case study does not exist or was moved.
           </p>
-          <Link to="/portfolio" className="btn btn-primary">
+          <Link to={backTo} className="btn btn-primary">
             Back to portfolio
           </Link>
         </div>
-        <CaseStudyChrome />
+        <CaseStudyChrome backTo={backTo} />
       </main>
     );
   }
@@ -86,7 +94,7 @@ const CaseStudyPage: FunctionComponent = () => {
     <main className="case-study">
       <header className="case-study__hero">
         <div className="container case-study__hero-inner">
-          <Link to="/portfolio" className="case-study__back">
+          <Link to={backTo} className="case-study__back">
             ← Back to portfolio
           </Link>
           <p className="case-study__eyebrow">Case study</p>
@@ -253,7 +261,7 @@ const CaseStudyPage: FunctionComponent = () => {
         </div>
       </section>
 
-      <CaseStudyChrome />
+      <CaseStudyChrome backTo={backTo} />
     </main>
   );
 };
