@@ -43,7 +43,7 @@ const TextInput: FunctionComponent<Props> = ({
     const isFilled = selectValue.length > 0;
 
     return (
-      <div className={"form"}>
+      <div className={"form form--select"}>
         <select
           id={name}
           name={name}
@@ -55,7 +55,7 @@ const TextInput: FunctionComponent<Props> = ({
           onChange={(event) => setSelectValue(event.target.value)}
         >
           <option value={""} disabled>
-            {" "}
+            {label}
           </option>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
