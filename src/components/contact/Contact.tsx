@@ -37,6 +37,15 @@ const options=[
 
 
 
+const SUBJECT_OPTIONS = [
+    { value: "new-project", label: "New project" },
+    { value: "consulting", label: "Consulting" },
+    { value: "collaboration", label: "Collaboration" },
+    { value: "support", label: "Support / existing work" },
+    { value: "other", label: "Other" },
+]
+
+
 const Contact : FunctionComponent =()=>{
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [emailSent, setEmailSent] = useState(false)
@@ -126,7 +135,11 @@ const Contact : FunctionComponent =()=>{
                             <TextInput label={"Full Name"} name={"fullName"} maxLength={30}/>
                             <TextInput label={"Your Email"} type={"email"} name={"email"} maxLength={20}/>
                             <TextInput label={"Your Phone"} type={"tel"} name={"phone"} maxLength={20}/>
-                            <TextInput label={"What you write for"} type={'"text'} name={"subject"} maxLength={100}/>
+                            <TextInput
+                                label={"Subject"}
+                                name={"subject"}
+                                options={SUBJECT_OPTIONS}
+                            />
                             {/*<TextInput label={"Your Email"} type={"email"} isTextArea={true} />*/}
                             {/*<input type={"text"} name={"name"} placeholder={"Your Full Name"} required/>*/}
                             {/*<input type={"email"} name={"email"} placeholder={"Your Email"} required/>*/}
