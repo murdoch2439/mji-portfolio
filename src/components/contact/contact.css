@@ -160,13 +160,16 @@
 
  input, textarea, select{
      width:100%;
-     padding:1.5rem;
      border-radius:0.5rem;
      background:transparent;
      border:2px solid var(--color-primary-variant);
      resize:none ;
      color:var(--color-white)
+ }
 
+ /* Textarea keeps generous padding; inputs/selects are sized in textInput.css */
+ textarea{
+     padding:1.5rem;
  }
 
 
