@@ -17,7 +17,8 @@
 
 .form{
     position:relative;
-    height:3rem;
+    height:3.25rem;
+    overflow: visible;
 }
 
 .form__input{
@@ -30,9 +31,11 @@
     border-radius:var(--radius);
     color: white;
     outline:none;
-    padding:1.25rem;
+    padding: 0 1.25rem;
     background:none;
     box-sizing: border-box;
+    font: inherit;
+    line-height: 1.2;
 }
 
 .form__input:hover{
@@ -47,8 +50,11 @@
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-    /* Room for the native chevron without looking cramped */
     padding-right: 2.5rem;
+    /* Vertically center the closed-select text inside the field */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
     background-image: linear-gradient(45deg, transparent 50%, var(--color-primary) 50%),
       linear-gradient(135deg, var(--color-primary) 50%, transparent 50%);
     background-position: calc(100% - 1.25rem) calc(50% - 0.15rem),
@@ -72,14 +78,15 @@
 .form__label{
    position:absolute;
     left:1rem;
-    top:0.8rem;
+    top:50%;
+    transform: translateY(-50%);
     padding:0 0.5rem;
     color:white;
     cursor:text;
-    /* Let clicks pass through to the input underneath — label is only visual until floated */
     pointer-events: none;
-    transition: top 250ms ease-in,
-    left 250ms ease-in, font-size 250ms ease-in;
+    white-space: nowrap;
+    transition: top 250ms ease-in, left 250ms ease-in,
+      font-size 250ms ease-in, transform 250ms ease-in;
     background-color: var(--color-bg);
     z-index: 1;
 }
@@ -88,8 +95,9 @@
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label,
 .form__select:focus ~ .form__label,
-.form__select:valid ~ .form__label{
-    top:-0.5rem;
+.form__select--filled ~ .form__label{
+    top: 0;
+    transform: translateY(-50%);
     font-size:0.8rem;
     left:0.8rem;
 }

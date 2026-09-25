@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 import "./textInput.css";
 
 export type SelectOption = {
@@ -24,6 +24,8 @@ const TextInput: FunctionComponent<Props> = ({
   name,
   options,
 }) => {
+  const [selectValue, setSelectValue] = useState("");
+
   if (isTextArea) {
     return (
       <div className={"form"}>
@@ -38,17 +40,22 @@ const TextInput: FunctionComponent<Props> = ({
   }
 
   if (options) {
+    const isFilled = selectValue.length > 0;
+
     return (
       <div className={"form"}>
         <select
           id={name}
           name={name}
-          className={"form__input form__select"}
+          className={`form__input form__select${
+            isFilled ? " form__select--filled" : ""
+          }`}
           required
-          defaultValue={""}
+          value={selectValue}
+          onChange={(event) => setSelectValue(event.target.value)}
         >
-          <option value={""} disabled hidden>
-            {label}
+          <option value={""} disabled>
+            {" "}
           </option>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
